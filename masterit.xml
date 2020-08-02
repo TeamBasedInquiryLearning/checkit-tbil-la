@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<masterit>
+    <title>Linear Algebra for Team-Based Inquiry Learning</title>
+    <author>Steven Clontz</author>
+    <author>Drew Lewis</author>
+    <url>https://github.com/StevenClontz/tbil-la/</url>
+    <slug>tbil-la</slug>
+    <objectives>
+        <objective>
+            <title>Linear systems, vector equations, and augmented matrices</title>
+            <slug>E1</slug>
+        </objective>
+        <objective>
+            <title>Row reduced echelon form</title>
+            <slug>E2</slug>
+        </objective>
+        <objective>
+            <title>Solving linear systems</title>
+            <slug>E3</slug>
+        </objective>
+    </objectives>
+</masterit>

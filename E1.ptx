@@ -1,0 +1,76 @@
+<exercise>
+  <statement>
+    <xsl:choose>
+      <xsl:when test="prompt='system'">
+        <p> Consider the system of equations
+            <md alignment="alignat">
+                <xsl:attribute name="alignat-columns"><xsl:value-of select="alignCols"/></xsl:attribute>
+              <xsl:for-each select="system/*">
+                <mrow><xsl:value-of select="."/></mrow>
+              </xsl:for-each>
+            </md></p>
+        <ol>
+            <li> Write an augmented matrix corresponding to this system. </li>
+            <li> Write a vector equation corresponding to this system. </li>
+        </ol>
+      </xsl:when>
+      <xsl:when test="prompt='matrix'">
+        <p> Consider the augmented matrix </p>
+            <me><xsl:value-of select="matrix"/></me>
+         <ol>
+            <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
+            <li> Write a vector equation corresponding to this augmented matrix. </li>
+        </ol>
+      </xsl:when>
+      <xsl:otherwise>
+        <p>Consider the vector equation.</p>
+            <me><xsl:value-of select="vectorequation"/></me>
+        <ol>
+            <li> Write a system of scalar equations corresponding to this vector equation. </li>
+            <li> Write an augmented matrix corresponding to this vector equation. </li>
+        </ol>
+      </xsl:otherwise>
+    </xsl:choose>
+  </statement>
+
+  <answer>
+    <xsl:choose>
+      <xsl:when test="prompt='system'">
+        <ol>
+            <li><me><xsl:value-of select="matrix"/></me> </li>
+            <li>             
+                <me><xsl:value-of select="vectorequation"/></me>
+            </li>
+        </ol>
+      </xsl:when>
+      <xsl:when test="prompt='matrix'">
+          <ol>
+            <li>        
+             <md alignment="alignat">
+                <xsl:attribute name="alignat-columns"><xsl:value-of select="alignCols"/></xsl:attribute>
+              <xsl:for-each select="system/*">
+                <mrow><xsl:value-of select="."/></mrow>
+              </xsl:for-each>
+            </md> 
+            </li>
+            <li>                
+                <me><xsl:value-of select="vectorequation"/></me>
+            </li>
+        </ol>
+      </xsl:when>
+      <xsl:otherwise>
+        <ol>
+            <li>        
+                <md alignment="alignat">
+                    <xsl:attribute name="alignat-columns"><xsl:value-of select="alignCols"/></xsl:attribute>
+                  <xsl:for-each select="system/*">
+                    <mrow><xsl:value-of select="."/></mrow>
+                  </xsl:for-each>
+                </md>
+            </li>
+            <li><me><xsl:value-of select="matrix"/></me> </li>
+        </ol>
+      </xsl:otherwise>
+    </xsl:choose>
+  </answer>
+</exercise>
