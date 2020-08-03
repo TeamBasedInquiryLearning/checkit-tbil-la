@@ -1,0 +1,12 @@
+<exercise>
+  <statement>
+      <p>Of the following three matrices, only two may be multiplied.
+      <md>
+          <mrow>A=<xsl:value-of select="A"/> &amp; &amp; B=<xsl:value-of select="B"/> &amp; &amp; C=<xsl:value-of select="C"/></mrow>
+      </md>
+      Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </statement>
+  <answer>
+      <me><xsl:value-of select="productName"/>=<xsl:value-of select="product"/></me>
+  </answer>
+</exercise>

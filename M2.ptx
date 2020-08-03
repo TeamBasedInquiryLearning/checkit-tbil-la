@@ -1,0 +1,28 @@
+<exercise>
+  <statement>
+      <p>Let <m>A</m> be a <m>4 \times 4</m> matrix.</p>
+      <ol>
+          <li>Give a <m>4 \times 4</m> matrix <m><xsl:value-of select="name1"/></m> that may be used to perform the row operation <m><xsl:value-of select="row_op1"/></m>.</li>
+          <li>Give a <m>4 \times 4</m> matrix <m><xsl:value-of select="name2"/></m> that may be used to perform the row operation <m><xsl:value-of select="row_op2"/></m>.</li>
+          <li>Use matrix multiplication to describe the matrix obtained by applying
+              <xsl:choose>
+                  <xsl:when test="swapped"><m><xsl:value-of select="row_op2"/></m> and then <m><xsl:value-of select="row_op1"/></m></xsl:when>
+                  <xsl:otherwise><m><xsl:value-of select="row_op1"/></m> and then <m><xsl:value-of select="row_op2"/></m></xsl:otherwise>
+              </xsl:choose>
+              to <m>A</m> (note the order).
+          </li>
+      </ol>
+  </statement>
+  <answer>
+       <ol>
+          <li><m><xsl:value-of select="name1"/>=<xsl:value-of select="mat1"/></m></li>
+          <li><m><xsl:value-of select="name2"/>=<xsl:value-of select="mat2"/></m></li>
+          <li>
+              <xsl:choose>
+                  <xsl:when test="swapped"><m><xsl:value-of select="name1"/><xsl:value-of select="name2"/>A</m></xsl:when>
+                  <xsl:otherwise><m><xsl:value-of select="name2"/><xsl:value-of select="name1"/>A</m></xsl:otherwise>
+              </xsl:choose>
+          </li>
+      </ol>
+  </answer>
+</exercise>

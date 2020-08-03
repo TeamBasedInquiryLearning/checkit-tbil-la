@@ -1,0 +1,8 @@
+<exercise>
+  <statement>
+      <p>Show how to find the inverse of the matrix <m><xsl:value-of select="name"/>=<xsl:value-of select="matrix"/></m>.</p>
+  </statement>
+  <answer>
+      <me><xsl:value-of select="name"/>^{-1}=<xsl:value-of select="inverse"/></me>
+  </answer>
+</exercise>

@@ -70,5 +70,21 @@
             <title>Injectivity and surjectivity</title>
             <slug>A4</slug>
         </objective>
+        <objective>
+            <title>Multiplying matrices</title>
+            <slug>M1</slug>
+        </objective>
+        <objective>
+            <title>Row operations as matrix multiplication</title>
+            <slug>M2</slug>
+        </objective>
+        <objective>
+            <title>Invertible matrices</title>
+            <slug>M3</slug>
+        </objective>
+        <objective>
+            <title>Finding a matrix inverse</title>
+            <slug>M4</slug>
+        </objective>
     </objectives>
 </masterit>
