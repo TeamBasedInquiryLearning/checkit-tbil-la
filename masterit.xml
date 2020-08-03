@@ -18,5 +18,9 @@
             <title>Solving linear systems</title>
             <slug>E3</slug>
         </objective>
+        <objective>
+            <title>Vector Spaces</title>
+            <slug>V1</slug>
+        </objective>
     </objectives>
 </masterit>

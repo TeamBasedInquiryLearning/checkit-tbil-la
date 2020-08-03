@@ -1,0 +1,29 @@
+<exercise>
+  <statement>
+    <p>
+      Let <m>V</m> be the set of all pairs <m>(x,y)</m> of real numbers
+      together with the following operations:
+    </p>
+    <md><mrow><xsl:value-of select="oplus"/></mrow><mrow><xsl:value-of select="otimes"/>.</mrow></md>
+    <p>
+      (a) Show that <xsl:value-of select="trueproperty"/>, that is:
+    </p>
+    <me>
+      <xsl:value-of select="truetex"/>.
+    </me>
+    <p>
+      (b) Explain why <m>V</m> nonetheless is not a vector space.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>V</m> is not a vector space, which may be shown by demonstrating that
+      any one of the following properties do not hold:
+    </p>
+    <ul>
+      <xsl:for-each select="falseproperties/*">
+        <li><xsl:value-of select="."/></li>
+      </xsl:for-each>
+    </ul>
+  </answer>
+</exercise>
