@@ -1,0 +1,16 @@
+<exercise>
+  <statement>
+    <p>Consider the subspace <me>W=\operatorname{span} <xsl:value-of select="vlist"/>.</me>
+    </p>
+    <ol>
+        <li> Explain how to find a basis of <m>W</m>.</li>
+        <li> Explain how to find the dimension of <m>W</m>.</li>
+    </ol>
+  </statement>
+  <answer>
+     <ol>
+          <li>A basis of <m>W</m> is <m><xsl:value-of select="basis"/></m>.</li>
+          <li>The dimension of <m>W</m> is <m><xsl:value-of select="dimension"/></m>.</li>
+      </ol>
+  </answer>
+</exercise>

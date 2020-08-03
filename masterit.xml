@@ -11,7 +11,7 @@
             <slug>E1</slug>
         </objective>
         <objective>
-            <title>Row reduced echelon form</title>
+            <title>Reduced row echelon form</title>
             <slug>E2</slug>
         </objective>
         <objective>
@@ -19,8 +19,40 @@
             <slug>E3</slug>
         </objective>
         <objective>
-            <title>Vector Spaces</title>
+            <title>Vector spaces</title>
             <slug>V1</slug>
+        </objective>
+        <objective>
+            <title>Linear combinations</title>
+            <slug>V2</slug>
+        </objective>
+        <objective>
+            <title>Spanning sets</title>
+            <slug>V3</slug>
+        </objective>
+        <objective>
+            <title>Subspaces</title>
+            <slug>V4</slug>
+        </objective>
+        <objective>
+            <title>Linear independence</title>
+            <slug>V5</slug>
+        </objective>
+        <objective>
+            <title>Basis identification</title>
+            <slug>V6</slug>
+        </objective>
+        <objective>
+            <title>Basis of a subspace</title>
+            <slug>V7</slug>
+        </objective>
+        <objective>
+            <title>Polynomial and matrix spaces</title>
+            <slug>V8</slug>
+        </objective>
+        <objective>
+            <title>Homogeneous systems</title>
+            <slug>V9</slug>
         </objective>
     </objectives>
 </masterit>

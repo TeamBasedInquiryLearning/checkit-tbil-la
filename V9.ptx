@@ -1,0 +1,22 @@
+<exercise>
+  <statement>
+    <p>Consider the homogeneous system of equations 
+    <md alignment="alignat">
+                <xsl:attribute name="alignat-columns"><xsl:value-of select="alignCols"/></xsl:attribute>
+              <xsl:for-each select="system/*">
+                <mrow><xsl:value-of select="."/></mrow>
+              </xsl:for-each>
+    </md>
+    </p>
+    <ol>
+        <li> Find the solution space of this system.</li>
+        <li> Find a basis of the solution space.</li>
+    </ol>
+  </statement>
+  <answer>
+     <ol>
+          <li>The solution space is <m><xsl:value-of select="solutions"/></m> </li>
+          <li>A basis of the solution space is <m><xsl:value-of select="basis"/></m>.</li>
+      </ol>
+  </answer>
+</exercise>

@@ -1,0 +1,23 @@
+<exercise>
+  <statement>
+    <p>Consider the following two sets of Euclidean vectors:
+    </p>
+    <md>
+      <mrow>
+          <xsl:value-of select="U"/> &amp; &amp;  <xsl:value-of select="W"/>
+      </mrow>
+    </md>
+    <p> Explain why one of these sets is a subspace of <m>\mathbb{R}^<xsl:value-of select="dim"/></m> and one is not.
+    </p>
+  </statement>
+  <answer>
+     <xsl:choose>
+         <xsl:when test="subspace='U'">
+             <p><m>U</m> is a subspace of <m>\mathbb{R}^<xsl:value-of select="dim"/></m> and <m>W</m> is not.</p>
+         </xsl:when>
+         <xsl:otherwise>
+             <p><m>U</m> is a subspace of <m>\mathbb{R}^<xsl:value-of select="dim"/></m> and <m>W</m> is not.</p>
+         </xsl:otherwise>
+     </xsl:choose>
+  </answer>
+</exercise>
