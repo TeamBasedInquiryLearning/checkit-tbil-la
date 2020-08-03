@@ -1,0 +1,8 @@
+<exercise>
+  <statement>
+      <p>Show how to compute the determinant of the matrix <me>A=<xsl:value-of select="matrix"/>.</me>.</p>
+  </statement>
+  <answer>
+      <me>\operatorname{det}\ <xsl:value-of select="matrix"/>=<xsl:value-of select="determinant"/></me>
+  </answer>
+</exercise>

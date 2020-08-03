@@ -1,0 +1,8 @@
+<exercise>
+  <statement>
+      <p>Explain how to find the eigenvalues of the matrix <m><xsl:value-of select="matrix"/></m>.</p>
+  </statement>
+  <answer>
+      <p>The eigenvalues of <m><xsl:value-of select="matrix"/></m> are <m><xsl:value-of select="e1"/></m> and <m><xsl:value-of select="e2"/></m>.</p>
+  </answer>
+</exercise>

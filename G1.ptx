@@ -1,0 +1,20 @@
+<exercise>
+  <statement>
+      <p>Let <m>A</m> be a <m>4 \times 4</m> matrix with determinant <m><xsl:value-of select="determinant"/></m>.</p>
+      <ol>
+          <li>Let <m><xsl:value-of select="name1"/></m> be the matrix obtained from <m>A</m> by applying the row operation <m><xsl:value-of select="row_op1"/></m>.
+              What is <m>\operatorname{det}\ <xsl:value-of select="name1"/></m>?</li>
+          <li>Let <m><xsl:value-of select="name2"/></m> be the matrix obtained from <m>A</m> by applying the row operation <m><xsl:value-of select="row_op2"/></m>.
+              What is <m>\operatorname{det}\ <xsl:value-of select="name2"/></m>?</li>
+          <li>Let <m><xsl:value-of select="name3"/></m> be the matrix obtained from <m>A</m> by applying the row operation <m><xsl:value-of select="row_op3"/></m>.
+              What is <m>\operatorname{det}\ <xsl:value-of select="name3"/></m>?</li>
+      </ol>
+  </statement>
+  <answer>
+       <ol>
+          <li><m>\operatorname{det}\ <xsl:value-of select="name1"/>=<xsl:value-of select="det1"/></m></li>
+          <li><m>\operatorname{det}\ <xsl:value-of select="name2"/>=<xsl:value-of select="det2"/></m></li>
+          <li><m>\operatorname{det}\ <xsl:value-of select="name3"/>=<xsl:value-of select="det3"/></m></li>
+      </ol>
+  </answer>
+</exercise>

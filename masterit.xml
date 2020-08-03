@@ -86,5 +86,21 @@
             <title>Finding a matrix inverse</title>
             <slug>M4</slug>
         </objective>
+               <objective>
+            <title>Row operations and determinants</title>
+            <slug>G1</slug>
+        </objective>
+        <objective>
+            <title>Determinants</title>
+            <slug>G2</slug>
+        </objective>
+        <objective>
+            <title>Eigenvalues</title>
+            <slug>G3</slug>
+        </objective>
+        <objective>
+            <title>Eigenvectors</title>
+            <slug>G4</slug>
+        </objective>
     </objectives>
 </masterit>
