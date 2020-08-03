@@ -1,0 +1,29 @@
+<exercise>
+  <statement>
+    <p>Consider the following maps of polynomials <m>S:\mathcal{P}\rightarrow\mathcal{P}</m> and <m>T:\mathcal{P}\rightarrow\mathcal{P}</m> defined by
+    <xsl:choose>
+        <xsl:when test="swapped">
+            <md>
+                <mrow>S(<xsl:value-of select="f_letter"/>(x))=<xsl:value-of select="nonlinear_trans"/> &amp; \text{and} &amp; T(<xsl:value-of select="f_letter"/>)=<xsl:value-of select="linear_trans"/>.</mrow> 
+            </md>
+        </xsl:when>
+        <xsl:otherwise>
+            <md>
+                <mrow>S(<xsl:value-of select="f_letter"/>(x))=<xsl:value-of select="linear_trans"/> &amp; \text{and} &amp; T(<xsl:value-of select="f_letter"/>)=<xsl:value-of select="nonlinear_trans"/>.</mrow> 
+            </md>
+        </xsl:otherwise>
+    </xsl:choose>
+    Explain why one these maps is a linear transformation and why the other map is not.
+    </p>
+  </statement>
+  <answer>
+    <xsl:choose>
+        <xsl:when test="swapped">
+            <p><m>S</m> is not linear and <m>T</m> is linear.</p>
+        </xsl:when>
+        <xsl:otherwise>
+            <p><m>S</m> is linear and <m>T</m> is not linear.</p>
+        </xsl:otherwise>
+    </xsl:choose>
+  </answer>
+</exercise>

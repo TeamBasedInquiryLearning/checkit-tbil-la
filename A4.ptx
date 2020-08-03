@@ -1,0 +1,26 @@
+<exercise>
+  <statement>
+      Let <m>T:\mathbb{R}^<xsl:value-of select="columns"/> \to \mathbb{R}^<xsl:value-of select="rows"/></m> be the linear transformation given by the standard matrix
+      <m><xsl:value-of select="A"/>.</m>
+      <ol>
+            <li>Explain why <m>T</m> is or is not injective.</li>
+            <li>Explain why <m>T</m> is or is not surjective.</li>
+      </ol>
+  </statement>
+  <answer>
+      <ol>
+          <li>
+              <xsl:choose>
+                  <xsl:when test="injective"> <m>T</m> is injective.</xsl:when>
+                  <xsl:otherwise> <m>T</m> is not injective</xsl:otherwise>
+              </xsl:choose>
+          </li>
+          <li>
+              <xsl:choose>
+                  <xsl:when test="surjective"> <m>T</m> is surjective.</xsl:when>
+                  <xsl:otherwise> <m>T</m> is not surjective</xsl:otherwise>
+              </xsl:choose>
+          </li>
+      </ol>
+  </answer>
+</exercise>

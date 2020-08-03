@@ -1,0 +1,23 @@
+<exercise>
+  <statement>
+      <ol>
+          <li>Find the standard matrix for the linear transformation <m>S:\mathbb{R}^<xsl:value-of select="Scols"/> \to \mathbb{R}^<xsl:value-of select="Srows"/></m> given by
+              <me>S\left( <xsl:value-of select="varvector"/> \right) = <xsl:value-of select="varmap"/>.</me>
+          </li>
+          <li>Let <m>T:\mathbb{R}^<xsl:value-of select="Tcols"/> \to \mathbb{R}^<xsl:value-of select="Trows"/></m> be the linear transformation given by the standard matrix
+              <me><xsl:value-of select="Tstandardmatrix"/>.</me>
+              Compute <m>T\left(<xsl:value-of select="vector"/> \right)</m>.
+          </li>
+      </ol>
+  </statement>
+  <answer>
+      <ol>
+          <li>
+              <me><xsl:value-of select="Sstandardmatrix"/></me>
+          </li>
+          <li>
+              <me>T\left(<xsl:value-of select="vector"/> \right)=<xsl:value-of select="Tvector"/></me>
+          </li>
+      </ol>
+  </answer>
+</exercise>

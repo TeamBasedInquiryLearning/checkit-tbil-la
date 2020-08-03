@@ -54,5 +54,21 @@
             <title>Homogeneous systems</title>
             <slug>V9</slug>
         </objective>
+        <objective>
+            <title>Linear maps</title>
+            <slug>A1</slug>
+        </objective>
+        <objective>
+            <title>Standard matrices</title>
+            <slug>A2</slug>
+        </objective>
+        <objective>
+            <title>Image and kernel</title>
+            <slug>A3</slug>
+        </objective>
+        <objective>
+            <title>Injectivity and surjectivity</title>
+            <slug>A4</slug>
+        </objective>
     </objectives>
 </masterit>
