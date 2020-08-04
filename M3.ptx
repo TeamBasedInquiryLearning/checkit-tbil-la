@@ -3,6 +3,7 @@
       <p>Explain why the matrix <m><xsl:value-of select="name"/>=<xsl:value-of select="matrix"/></m> is or is not invertible.</p>
   </statement>
   <answer>
+      <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
       <xsl:choose>
           <xsl:when test="invertible"><m><xsl:value-of select="name"/></m> is invertible.</xsl:when>
           <xsl:otherwise><m><xsl:value-of select="name"/></m> is not invertible.</xsl:otherwise>

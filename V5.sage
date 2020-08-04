@@ -30,5 +30,7 @@ def generator():
       "independent": independent,
       "vecset": vectorSet(vec),
       "veceq": vectorEquation(A.augment(zero_vector(ZZ,5),subdivide=true)),
-      "prompt": choice([true,false])
+      "prompt": choice([true,false]),
+      "matrix": A.augment( vector([0 for i in range(0,A.nrows())]),true),
+      "rref":A.augment( vector([0 for i in range(0,A.nrows())]),true).rref(),
     }

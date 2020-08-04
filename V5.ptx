@@ -14,28 +14,29 @@
     </ol>
   </statement>
   <answer>
-  <ol>
-      <li>The statement
-        <claim> The set of vectors <m><xsl:value-of select="vecset"/></m> 
-            <xsl:choose>
-                <xsl:when test="prompt">is linearly independent.</xsl:when>
-                <xsl:otherwise>is linearly dependent.</xsl:otherwise>
-            </xsl:choose>
-        </claim>
-        is equivalent to the statement
-        <claim> The vector equation <m><xsl:value-of select="veceq"/></m> 
-            <xsl:choose>
-                <xsl:when test="prompt">has no nontrivial solutions.</xsl:when>
-                <xsl:otherwise>has (infinitely many) nontrivial solutions.</xsl:otherwise>
-            </xsl:choose>
-        </claim>
-       </li>
-       <li> The set of vectors <m><xsl:value-of select="vecset"/></m> 
-            <xsl:choose>
-                <xsl:when test="independent">is linearly independent.</xsl:when>
-                <xsl:otherwise>is linearly dependent.</xsl:otherwise>
-            </xsl:choose>
-        </li>
-   </ol>   
+      <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
+      <ol>
+          <li>The statement
+            <claim> The set of vectors <m><xsl:value-of select="vecset"/></m> 
+                <xsl:choose>
+                    <xsl:when test="prompt">is linearly independent.</xsl:when>
+                    <xsl:otherwise>is linearly dependent.</xsl:otherwise>
+                </xsl:choose>
+            </claim>
+            is equivalent to the statement
+            <claim> The vector equation <m><xsl:value-of select="veceq"/></m> 
+                <xsl:choose>
+                    <xsl:when test="prompt">has no nontrivial solutions.</xsl:when>
+                    <xsl:otherwise>has (infinitely many) nontrivial solutions.</xsl:otherwise>
+                </xsl:choose>
+            </claim>
+           </li>
+           <li> The set of vectors <m><xsl:value-of select="vecset"/></m> 
+                <xsl:choose>
+                    <xsl:when test="independent">is linearly independent.</xsl:when>
+                    <xsl:otherwise>is linearly dependent.</xsl:otherwise>
+                </xsl:choose>
+            </li>
+       </ol>   
   </answer>
 </exercise>

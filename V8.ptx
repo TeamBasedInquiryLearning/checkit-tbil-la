@@ -14,6 +14,7 @@
     </ol>
   </statement>
   <answer>
+      <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
      <ol>
           <li>The statement
             <claim> The set of <xsl:choose><xsl:when test="context='polynomial'">polynomials </xsl:when><xsl:otherwise>matrices </xsl:otherwise></xsl:choose> <m><xsl:value-of select="set"/></m> 

@@ -18,7 +18,7 @@ def generator():
         surjective=false
 
     return {
-      "A": A,
+      "matrix": A,
       "columns": columns,
       "rows": rows,
       "rref": A.rref(),

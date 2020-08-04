@@ -9,6 +9,7 @@
       </ol>
   </statement>
   <answer>
+      <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
       <ol>
           <li>
               <me>\operatorname{Im}\ T = \operatorname{span}\ <xsl:value-of select="imagebasis"/></me>

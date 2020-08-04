@@ -15,6 +15,7 @@
     </ol>
   </statement>
   <answer>
+     <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
      <ol>
          <li>The statement 
              <claim> The set of vectors <m><xsl:value-of select="vecset"/></m> 

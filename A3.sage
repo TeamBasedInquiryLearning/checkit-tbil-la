@@ -39,7 +39,7 @@ def generator():
       "rows": rows,
       "Tvar": A*xs,
       "varvector": xs,
-      "standardmatrix": A,
+      "matrix": A,
       "rref": A.rref(),
       "imagebasis": vectorSet(imagebasis),
       "kernelbasis": vectorSet(kernelbasis),

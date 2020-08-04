@@ -13,4 +13,6 @@ def generator():
       "matrix": B,
       "eigenvalue": l,
       "basis": vectorSet(basis), 
+      "matrix-minus-lambda":A,
+      "rref": A.rref(),
     }

@@ -1,13 +1,14 @@
 <exercise>
   <statement>
       Let <m>T:\mathbb{R}^<xsl:value-of select="columns"/> \to \mathbb{R}^<xsl:value-of select="rows"/></m> be the linear transformation given by the standard matrix
-      <m><xsl:value-of select="A"/>.</m>
+      <m><xsl:value-of select="matrix"/>.</m>
       <ol>
             <li>Explain why <m>T</m> is or is not injective.</li>
             <li>Explain why <m>T</m> is or is not surjective.</li>
       </ol>
   </statement>
   <answer>
+      <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
       <ol>
           <li>
               <xsl:choose>

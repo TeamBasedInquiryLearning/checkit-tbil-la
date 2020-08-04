@@ -8,5 +8,6 @@ def generator():
     return {
       "matrix": A,
       "e1": l1,
-      "e2": l2
+      "e2": l2,
+      "charpoly": A.charpoly('lambda_'),
     }

@@ -82,4 +82,6 @@ def generator():
       "set": bracedSet(vset),
       "equation": eq,
       "result": result,
+      "matrix": A,
+      "rref": A.rref(),
     }

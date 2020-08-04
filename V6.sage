@@ -33,5 +33,7 @@ def generator():
       "basis": basis,
       "vecset": vectorSet(vec),
       "dim": str(n),
-      "prompt": choice([true,false])
+      "prompt": choice([true,false]),
+      "matrix": A,
+      "rref": A.rref(),
     }

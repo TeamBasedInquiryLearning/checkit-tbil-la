@@ -26,6 +26,8 @@ def generator():
     return {
       "vlist": vectorSet(vec),
       "basis": vectorSet(basis),
-      "dimension": len(basis)
+      "dimension": len(basis),
+      "matrix": A,
+      "rref": A.rref(),
     }
 

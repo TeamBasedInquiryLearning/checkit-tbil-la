@@ -44,4 +44,6 @@ def generator():
       "alignCols": A.ncols()+1,
       "basis": vectorSet(basis),
       "solutions": solset,
+      "matrix": A.augment( vector([0 for i in range(0,A.nrows())]),true),
+      "rref":A.augment( vector([0 for i in range(0,A.nrows())]),true).rref(),
     }

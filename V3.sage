@@ -31,5 +31,7 @@ def generator():
       "spans": span,
       "vecset": vectorSet(vec),
       "vecComb": vectorComb,
-      "prompt": choice([true,false])
+      "prompt": choice([true,false]),
+      "matrix": A,
+      "rref": A.rref(),
     }

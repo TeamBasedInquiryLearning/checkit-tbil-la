@@ -14,6 +14,7 @@
     </ol>
   </statement>
   <answer>
+     <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
      <ol>
           <li>The solution space is <m><xsl:value-of select="solutions"/></m> </li>
           <li>A basis of the solution space is <m><xsl:value-of select="basis"/></m>.</li>

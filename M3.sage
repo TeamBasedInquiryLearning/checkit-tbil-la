@@ -10,5 +10,6 @@ def generator():
     return {
       "name": choice(["A","B","C","M","N","P","Q"]),
       "matrix": A,
+      "rref": A.rref(),
       "invertible": invertible
     }
