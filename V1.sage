@@ -31,7 +31,7 @@ def generator():
                     "scalar multiplication does not distribute over vector addition",#6
                     "scalar multiplication does not distribute over scalar addition"#7
                    ]
-    n = 0 #randrange(0,10)
+    n = randrange(0,10)
     if n==1:
         def oplusop(v1,v2):
             return vector([randrange(2,5)*v1[0]+v2[0], v1[1]+randrange(1,4)*v2[1]])
