@@ -4,7 +4,7 @@
     </p>
     <md>
       <mrow>
-          <xsl:value-of select="U"/> &amp; &amp;  <xsl:value-of select="W"/>
+          U=<xsl:value-of select="U"/> &amp; &amp;  W=<xsl:value-of select="W"/>
       </mrow>
     </md>
     <p> Explain why one of these sets is a subspace of <m>\mathbb{R}^<xsl:value-of select="dim"/></m> and one is not.
