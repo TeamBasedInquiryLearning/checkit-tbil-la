@@ -56,6 +56,6 @@ def generator():
     return {
       "U": setBuilder(column_matrix(v),[predicates[0]]),
       "W": setBuilder(column_matrix(v),[predicates[1]]),
-      "subspace": "U",
+      "subspace": subspace,
       "dim": dim
     }
