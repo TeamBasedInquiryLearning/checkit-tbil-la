@@ -16,7 +16,7 @@
              <p><m>U</m> is a subspace of <m>\mathbb{R}^<xsl:value-of select="dim"/></m> and <m>W</m> is not.</p>
          </xsl:when>
          <xsl:otherwise>
-             <p><m>U</m> is a subspace of <m>\mathbb{R}^<xsl:value-of select="dim"/></m> and <m>W</m> is not.</p>
+             <p><m>W</m> is a subspace of <m>\mathbb{R}^<xsl:value-of select="dim"/></m> and <m>U</m> is not.</p>
          </xsl:otherwise>
      </xsl:choose>
   </answer>
