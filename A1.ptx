@@ -4,12 +4,12 @@
     <xsl:choose>
         <xsl:when test="swapped">
             <md>
-                <mrow>S(<xsl:value-of select="f_letter"/>(x))=<xsl:value-of select="nonlinear_trans"/> &amp; \text{and} &amp; T(<xsl:value-of select="f_letter"/>)=<xsl:value-of select="linear_trans"/>.</mrow> 
+                <mrow>S(<xsl:value-of select="f_letter"/>(x))=<xsl:value-of select="nonlinear_trans"/> &amp; &amp; \text{and} &amp; &amp; T(<xsl:value-of select="f_letter"/>(x))=<xsl:value-of select="linear_trans"/>.</mrow> 
             </md>
         </xsl:when>
         <xsl:otherwise>
             <md>
-                <mrow>S(<xsl:value-of select="f_letter"/>(x))=<xsl:value-of select="linear_trans"/> &amp; \text{and} &amp; T(<xsl:value-of select="f_letter"/>)=<xsl:value-of select="nonlinear_trans"/>.</mrow> 
+                <mrow>S(<xsl:value-of select="f_letter"/>(x))=<xsl:value-of select="linear_trans"/> &amp; &amp; \text{and} &amp;&amp; T(<xsl:value-of select="f_letter"/>(x))=<xsl:value-of select="nonlinear_trans"/>.</mrow> 
             </md>
         </xsl:otherwise>
     </xsl:choose>
