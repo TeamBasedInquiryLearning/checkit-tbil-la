@@ -1,13 +1,7 @@
 <exercise>
   <statement>
-    <p>Consider the homogeneous system of equations 
-    <md alignment="alignat">
-                <xsl:attribute name="alignat-columns"><xsl:value-of select="alignCols"/></xsl:attribute>
-              <xsl:for-each select="system/*">
-                <mrow><xsl:value-of select="."/></mrow>
-              </xsl:for-each>
-    </md>
-    </p>
+      <p>Consider the following homogeneous system of equations.</p>
+      <me><xsl:value-of select="system"/></me>
     <ol>
         <li> Find the solution space of this system.</li>
         <li> Find a basis of the solution space.</li>

@@ -4,12 +4,7 @@
     <xsl:choose>
         <xsl:when test="prompt='system'">
             system of linear equations.
-            <md alignment="alignat">
-                <xsl:attribute name="alignat-columns"><xsl:value-of select="alignCols"/></xsl:attribute>
-              <xsl:for-each select="system/*">
-                <mrow><xsl:value-of select="."/></mrow>
-              </xsl:for-each>
-            </md>
+            <me><xsl:value-of select="system"/></me>
         </xsl:when>
         <xsl:otherwise>
         vector equation <me><xsl:value-of select="vectoreq"/>.</me>
@@ -20,7 +15,6 @@
 
   <answer>
     <me>\mathrm{RREF}<xsl:value-of select="matrix"/> = <xsl:value-of select="rref"/></me>
-    <p>The solution set is <m><xsl:value-of select="solution"/></m></p>
-
+    <p>The solution set is <m><xsl:value-of select="solution"/></m>.</p>
   </answer>
 </exercise>

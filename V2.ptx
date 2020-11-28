@@ -1,15 +1,16 @@
 <exercise>
   <statement>
-    <p>Consider the statement 
-        <claim>
+      <p>Consider the following statement.</p>
+        <ul>
+            <li>
             The vector <m><xsl:value-of select="combovector"/></m>  
             <xsl:choose>
                 <xsl:when test="statement">is</xsl:when>
                 <xsl:otherwise>is not</xsl:otherwise>
             </xsl:choose>
                 a linear combination of the vectors <m><xsl:value-of select="veclist"/></m>.
-        </claim>
-    </p>
+            </li>
+        </ul>
     <ol>
         <li> Write an equivalent statement using a vector equation.</li>
         <li> Explain why your statement is true or false.</li>
@@ -18,32 +19,21 @@
   <answer>
      <me>\operatorname{RREF} <xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me>
      <ol>
-        <li> The statement
-            <claim>
-                The vector <m><xsl:value-of select="combovector"/></m>  
-                <xsl:choose>
-                    <xsl:when test="statement">is</xsl:when>
-                    <xsl:otherwise>is not</xsl:otherwise>
-                </xsl:choose>
-                    a linear combination of the vectors <m><xsl:value-of select="veclist"/></m>.
-            </claim>
-            is equivalent to the statement
-            <claim>
+        <li> 
                 The vector equation <m><xsl:value-of select="veceq"/></m>  
                 <xsl:choose>
                     <xsl:when test="statement">has a solution.</xsl:when>
                     <xsl:otherwise>has no solutions.</xsl:otherwise>
                 </xsl:choose>
-            </claim>
-        </li>
-        <li>     
+                </li>
+        <li>
             <p> <m><xsl:value-of select="combovector"/></m>
              <xsl:choose>
                   <xsl:when test="lc"> is </xsl:when>
                   <xsl:otherwise> is not </xsl:otherwise>
               </xsl:choose>
                  a linear combination of the vectors <m><xsl:value-of select="veclist"/></m>.
-            </p>  
+            </p>
         </li>
     </ol>
 

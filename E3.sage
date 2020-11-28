@@ -12,10 +12,10 @@ def generator():
     A.subdivide([],[columns-1])
 
     # construct variables
-    xs=vector([var("x_"+str(i+1)) for i in range(0,columns-1)])
+    xs=[var("x_"+str(i+1)) for i in range(0,columns-1)]
 
     # construct system
-    system=[A.delete_columns([columns-1]).row(r)*xs==A.column(-1)[r] for r in range(0,rows)]
+    system=[A.delete_columns([columns-1]).row(r)*vector(xs)==A.column(-1)[r] for r in range(0,rows)]
 
     #Choose prompt
     prompt = choice(["system","vectoreq"])
@@ -57,7 +57,7 @@ def generator():
 
 
     return {
-        'system': systemEquations(A).equations,
+        'system': latex_system_from_matrix(A,variable_list=xs),
         'alignCols': A.ncols(),
         'matrix': A,
         'rref': rref,

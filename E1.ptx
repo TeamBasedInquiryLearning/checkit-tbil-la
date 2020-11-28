@@ -2,13 +2,8 @@
   <statement>
     <xsl:choose>
       <xsl:when test="prompt='system'">
-        <p> Consider the system of equations
-            <md alignment="alignat">
-                <xsl:attribute name="alignat-columns"><xsl:value-of select="alignCols"/></xsl:attribute>
-              <xsl:for-each select="system/*">
-                <mrow><xsl:value-of select="."/></mrow>
-              </xsl:for-each>
-            </md></p>
+        <p> Consider the system of equations</p>
+        <me><xsl:value-of select="system"/></me>
         <ol>
             <li> Write an augmented matrix corresponding to this system. </li>
             <li> Write a vector equation corresponding to this system. </li>
@@ -38,35 +33,25 @@
       <xsl:when test="prompt='system'">
         <ol>
             <li><me><xsl:value-of select="matrix"/></me> </li>
-            <li>             
+            <li>
                 <me><xsl:value-of select="vectorequation"/></me>
             </li>
         </ol>
       </xsl:when>
       <xsl:when test="prompt='matrix'">
           <ol>
-            <li>        
-             <md alignment="alignat">
-                <xsl:attribute name="alignat-columns"><xsl:value-of select="alignCols"/></xsl:attribute>
-              <xsl:for-each select="system/*">
-                <mrow><xsl:value-of select="."/></mrow>
-              </xsl:for-each>
-            </md> 
+            <li>
+                <me><xsl:value-of select="system"/></me>
             </li>
-            <li>                
+            <li>
                 <me><xsl:value-of select="vectorequation"/></me>
             </li>
         </ol>
       </xsl:when>
       <xsl:otherwise>
         <ol>
-            <li>        
-                <md alignment="alignat">
-                    <xsl:attribute name="alignat-columns"><xsl:value-of select="alignCols"/></xsl:attribute>
-                  <xsl:for-each select="system/*">
-                    <mrow><xsl:value-of select="."/></mrow>
-                  </xsl:for-each>
-                </md>
+            <li>
+                <me><xsl:value-of select="system"/></me>
             </li>
             <li><me><xsl:value-of select="matrix"/></me> </li>
         </ol>

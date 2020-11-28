@@ -13,18 +13,18 @@ def generator():
 
     # construct variables
     xs=choice([
-      vector([var("x_"+str(i+1)) for i in range(0,columns-1)]),
-      vector([var("x"),var("y"),var("z"),var("zw",latex_name="w")][0:columns-1]),
+      [var("x_"+str(i+1)) for i in range(0,columns-1)],
+      [var("x"),var("y"),var("z"),var("zw",latex_name="w")][0:columns-1],
     ])
 
     # construct system
-    system=[A.delete_columns([columns-1]).row(r)*xs==A.column(-1)[r] for r in range(0,rows)]
+    system=[A.delete_columns([columns-1]).row(r)*vector(xs)==A.column(-1)[r] for r in range(0,rows)]
 
     #randomly swap exercise query
     prompt = choice(["system","matrix","vector"])
 
     return {
-        "system": systemEquations(A,xs).equations,
+        "system": latex_system_from_matrix(A,variable_list=xs),
         "alignCols": A.ncols(),
         "matrix": A, 
         "vectorequation": vectorEquation(A),

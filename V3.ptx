@@ -1,14 +1,13 @@
 <exercise>
   <statement>
-    <p>Consider the statement
-        <claim> The set of vectors <m><xsl:value-of select="vecset"/></m> 
+      <p>Consider the following statement.</p>
+        <ul><li> The set of vectors <m><xsl:value-of select="vecset"/></m> 
             <xsl:choose>
                 <xsl:when test="prompt">spans </xsl:when>
                 <xsl:otherwise>does not span </xsl:otherwise>
             </xsl:choose>
             <m>\mathbb{R}^4</m>.
-        </claim>
-	</p>
+        </li></ul>
     <ol>
         <li> Write an equivalent statement using a vector equation.</li>
         <li> Explain why your statement is true or false.</li>
@@ -17,22 +16,12 @@
   <answer>
      <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
      <ol>
-         <li>The statement 
-             <claim> The set of vectors <m><xsl:value-of select="vecset"/></m> 
-                <xsl:choose>
-                    <xsl:when test="prompt"> spans </xsl:when>
-                    <xsl:otherwise> does not span </xsl:otherwise>
-                </xsl:choose>
-                <m>\mathbb{R}^4</m>.
-             </claim>
-             is equivalent to the statement
-             <claim> The vector equation <m><xsl:value-of select="vecComb"/>=\vec{v}</m> 
+         <li>The vector equation <m><xsl:value-of select="vecComb"/>=\vec{v}</m> 
                 <xsl:choose>
                     <xsl:when test="prompt"> has a solution for every </xsl:when>
                     <xsl:otherwise> is inconsistent for some </xsl:otherwise>
                 </xsl:choose>
                 vector <m>\vec{v}</m> in <m>\mathbb{R}^4</m>.
-             </claim>
            </li>
            <li>
                 The set of vectors <m><xsl:value-of select="vecset"/></m>
@@ -41,7 +30,6 @@
                       <xsl:otherwise> does not span  </xsl:otherwise>
                 </xsl:choose>
                 <m>\mathbb{R}^4</m>.
-
             </li>
        </ol>
   </answer>

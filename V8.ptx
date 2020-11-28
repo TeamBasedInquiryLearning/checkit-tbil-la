@@ -1,13 +1,12 @@
 <exercise>
   <statement>
-  <p>Consider the statement
-        <claim> The set of <xsl:choose><xsl:when test="context='polynomial'">polynomials </xsl:when><xsl:otherwise>matrices </xsl:otherwise></xsl:choose> <m><xsl:value-of select="set"/></m> 
+      <p>Consider the following statement.</p>
+        <ul><li> The set of <xsl:choose><xsl:when test="context='polynomial'">polynomials </xsl:when><xsl:otherwise>matrices </xsl:otherwise></xsl:choose> <m><xsl:value-of select="set"/></m> 
             <xsl:choose>
                 <xsl:when test="task='independent'"> is linearly independent.</xsl:when>
                 <xsl:otherwise> spans <xsl:choose><xsl:when test="context='polynomial'"><m>\mathcal{P}_3</m></xsl:when><xsl:otherwise><m>\mathrm{M}_{2,2}</m></xsl:otherwise></xsl:choose>. </xsl:otherwise>
             </xsl:choose>
-        </claim>
-	</p>
+        </li></ul>
     <ol>
         <li> Write an equivalent statement using a <xsl:choose><xsl:when test="context='polynomial'">polynomial</xsl:when><xsl:otherwise>matrix</xsl:otherwise></xsl:choose> equation.</li>
         <li> Explain why your statement is true or false.</li>
@@ -16,15 +15,7 @@
   <answer>
       <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
      <ol>
-          <li>The statement
-            <claim> The set of <xsl:choose><xsl:when test="context='polynomial'">polynomials </xsl:when><xsl:otherwise>matrices </xsl:otherwise></xsl:choose> <m><xsl:value-of select="set"/></m> 
-            <xsl:choose>
-                <xsl:when test="task='independent'"> is linearly independent.</xsl:when>
-                <xsl:otherwise> spans <xsl:choose><xsl:when test="context='polynomial'"><m>\mathcal{P}_3</m></xsl:when><xsl:otherwise><m>\mathrm{M}_{2,2}</m></xsl:otherwise></xsl:choose>. </xsl:otherwise>
-            </xsl:choose>
-        </claim>
-            is equivalent to the statement
-            <claim> 
+         <li>
             <xsl:choose>
                 <xsl:when test="task='independent'">
                     The <xsl:choose><xsl:when test="context='polynomial'">polynomial </xsl:when><xsl:otherwise>matrix </xsl:otherwise></xsl:choose> equation 
@@ -42,7 +33,6 @@
                      </xsl:choose>
                 </xsl:otherwise>
             </xsl:choose>
-            </claim>
           </li>
               <li>The set of <xsl:choose><xsl:when test="context='polynomial'">polynomials </xsl:when><xsl:otherwise>matrices </xsl:otherwise></xsl:choose> <m><xsl:value-of select="set"/></m> 
             <xsl:choose>

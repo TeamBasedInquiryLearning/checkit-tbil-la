@@ -10,16 +10,6 @@ def generator():
     number_of_pivots = randrange(2,max_number_of_pivots+1)
     A = random_matrix(QQ,rows,columns,algorithm='echelonizable',rank=number_of_pivots,upper_bound=13)
 
-    # construct variables
-    xs=vector([var("x_"+str(i+1)) for i in range(0,columns)])
-
-    # construct system
-    #system="<md>"
-    #for r in A.rows():
-    #    system+="<mrow>"+latex(r*xs)+"&=0</mrow>"
-    #system+="</md>"
-
-
     #Get solution set
     free_vars = [var("a"), var("b"), var("c"), var("d")]
     basis=A.right_kernel(basis='pivot').basis()
@@ -40,7 +30,7 @@ def generator():
         solset = setBuilder(solutions)
 
     return {
-      "system": systemEquations(A).equations,
+      "system": latex_system_from_matrix(A),
       "alignCols": A.ncols()+1,
       "basis": vectorSet(basis),
       "solutions": solset,

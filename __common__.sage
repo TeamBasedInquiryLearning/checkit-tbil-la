@@ -111,47 +111,4 @@ class vectorEquation(Equation):
         
         super().__init__(linearCombination(vars,[column_matrix(c) for c in self.matrix.subdivision(0,0).columns()]), column_matrix(A.column(-1)))
 
-#class to typeset properly aligned systems of equations using alignat
-class systemEquations:
-    def __init__(self,A,vars=None):
-        self.matrix=A
-        #Check if column subdivision exists
-        if not self.matrix.subdivisions()[1]:
-            self.matrix=self.matrix.augment(zero_vector(ZZ, len(self.matrix.rows())), subdivide=true)
-
-        #if vars were not supplied, create them
-        if not vars:
-            self.vars = vector([var("x_"+str(i+1)) for i in range(0,self.matrix.subdivision(0,0).ncols())])
-        else:
-            self.vars = vars[0: self.matrix.subdivision(0,0).ncols()]
-            
-        self.equations=[]
-        for row in self.matrix.rows():
-            eqstring=""
-            #row is immutable, so make a copy
-            rowCopy=copy(row)
-            #Track leading zeroes, so that we don't start with something like +x_2
-            leadingZeros=true
-            for i in range(0,len(self.vars)):
-                eqstring+= latex(rowCopy[i] * self.vars[i]) if rowCopy[i] else ""
-                if not(leadingZeros and rowCopy[i]==0):
-                    leadingZeros=false
-                if i < len(self.vars)-1:
-                    #Use minus signs instead of adding negatives
-                    if rowCopy[i+1]<0:
-                        rowCopy[i+1]*=-1
-                        eqstring+=" &-& "
-                    elif rowCopy[i+1]>0 and not leadingZeros:
-                        eqstring+=" &+& "
-                    else:
-                        eqstring+=" & & "
-            #If the entire row was zero
-            if leadingZeros:
-                eqstring+="0"
-            eqstring+= " &=& " + latex(row[len(self.vars)]) 
-            self.equations.append(LatexExpr(eqstring))
-
-#Right now, need to just get equations element. PreText won't play nice with a  system, have to manually iterate through list of equations       
-    def _latex_(self):
-        return self.equations
 
