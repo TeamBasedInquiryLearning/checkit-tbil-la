@@ -1,18 +1,26 @@
 <exercise>
   <statement>
     <p>Consider the following maps of polynomials <m>S:\mathcal{P}\rightarrow\mathcal{P}</m> and <m>T:\mathcal{P}\rightarrow\mathcal{P}</m> defined by
+            <me>
+                S(<xsl:value-of select="f_letter"/>(x))=
     <xsl:choose>
         <xsl:when test="swapped">
-            <md>
-                <mrow>S(<xsl:value-of select="f_letter"/>(x))=<xsl:value-of select="nonlinear_trans"/> &amp; &amp; \text{and} &amp; &amp; T(<xsl:value-of select="f_letter"/>(x))=<xsl:value-of select="linear_trans"/>.</mrow> 
-            </md>
+            <xsl:value-of select="nonlinear_trans"/>
         </xsl:when>
         <xsl:otherwise>
-            <md>
-                <mrow>S(<xsl:value-of select="f_letter"/>(x))=<xsl:value-of select="linear_trans"/> &amp; &amp; \text{and} &amp;&amp; T(<xsl:value-of select="f_letter"/>(x))=<xsl:value-of select="nonlinear_trans"/>.</mrow> 
-            </md>
+            <xsl:value-of select="linear_trans"/>
         </xsl:otherwise>
     </xsl:choose>
+                \hspace{1em} \text{and} \hspace{1em} T(<xsl:value-of select="f_letter"/>(x))=
+    <xsl:choose>
+        <xsl:when test="swapped">
+            <xsl:value-of select="linear_trans"/>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="nonlinear_trans"/>
+        </xsl:otherwise>
+    </xsl:choose>
+        </me>
     Explain why one these maps is a linear transformation and why the other map is not.
     </p>
   </statement>

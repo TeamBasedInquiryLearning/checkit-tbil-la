@@ -4,7 +4,7 @@
       Let <m>V</m> be the set of all pairs <m>(x,y)</m> of real numbers
       together with the following operations:
     </p>
-    <md><mrow><xsl:value-of select="oplus"/></mrow><mrow><xsl:value-of select="otimes"/>.</mrow></md>
+      <me><xsl:value-of select="oplus"/></me><me><xsl:value-of select="otimes"/>.</me>
     <p>
       (a) Show that <xsl:value-of select="trueproperty"/>, that is:
     </p>

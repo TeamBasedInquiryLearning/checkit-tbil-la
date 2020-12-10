@@ -1,9 +1,9 @@
 <exercise>
   <statement>
       <p>Of the following three matrices, only two may be multiplied.
-      <md>
-          <mrow>A=<xsl:value-of select="A"/> &amp; &amp; B=<xsl:value-of select="B"/> &amp; &amp; C=<xsl:value-of select="C"/></mrow>
-      </md>
+      <me>
+          A=<xsl:value-of select="A"/> \hspace{1em} B=<xsl:value-of select="B"/> \hspace{1em} C=<xsl:value-of select="C"/>
+      </me>
       Explain which two can be multiplied and why. Then show how to find their product.</p>
   </statement>
   <answer>

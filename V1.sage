@@ -2,8 +2,8 @@ load("__common__.sage")
 
 def generator():
     var('x1 x2 x3 y1 y2 y3 c d x y')
-    oplus=r"(x_1,y_1)\oplus (x_2,y_2)&="
-    otimes=r"c \odot (x,y) &="
+    oplus=r"(x_1,y_1)\oplus (x_2,y_2)="
+    otimes=r"c \odot (x,y) ="
     trueproperties=["vector addition is associative", 
                     "vector addition is commutative",
                     "there exists an additive identity element",

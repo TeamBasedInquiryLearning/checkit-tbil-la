@@ -9,98 +9,194 @@
         <objective>
             <title>Linear systems, vector equations, and augmented matrices</title>
             <slug>E1</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Reduced row echelon form</title>
             <slug>E2</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Solving linear systems</title>
             <slug>E3</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Vector spaces</title>
             <slug>V1</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Linear combinations</title>
             <slug>V2</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Spanning sets</title>
             <slug>V3</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Subspaces</title>
             <slug>V4</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Linear independence</title>
             <slug>V5</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Basis identification</title>
             <slug>V6</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Basis of a subspace</title>
             <slug>V7</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Polynomial and matrix spaces</title>
             <slug>V8</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Homogeneous systems</title>
             <slug>V9</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Linear maps</title>
             <slug>A1</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Standard matrices</title>
             <slug>A2</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Image and kernel</title>
             <slug>A3</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Injectivity and surjectivity</title>
             <slug>A4</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Multiplying matrices</title>
             <slug>M1</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Row operations as matrix multiplication</title>
             <slug>M2</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Invertible matrices</title>
             <slug>M3</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Finding a matrix inverse</title>
             <slug>M4</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
                <objective>
             <title>Row operations and determinants</title>
             <slug>G1</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Determinants</title>
             <slug>G2</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Eigenvalues</title>
             <slug>G3</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
         <objective>
             <title>Eigenvectors</title>
             <slug>G4</slug>
+            <description>
+            </description>
+            <alignment>
+            </alignment>
         </objective>
     </objectives>
 </bank>
