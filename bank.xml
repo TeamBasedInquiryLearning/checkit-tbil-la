@@ -5,198 +5,223 @@
     <author>Drew Lewis</author>
     <url>https://github.com/StevenClontz/tbil-la/</url>
     <slug>tbil-la</slug>
-    <objectives>
-        <objective>
+    <outcomes>
+        <outcome>
             <title>Linear systems, vector equations, and augmented matrices</title>
             <slug>E1</slug>
             <description>
+                Translate back and forth between a system of linear equations, a vector equation, and the corresponding augmented matrix.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Reduced row echelon form</title>
             <slug>E2</slug>
             <description>
+                Explain why a matrix isn’t in reduced row echelon form, and put a matrix in reduced row echelon form.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Solving linear systems</title>
             <slug>E3</slug>
             <description>
+                Compute the solution set for a system of linear equations or a vector equation.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Vector spaces</title>
             <slug>V1</slug>
             <description>
+                Explain why a given set with defined addition and scalar multiplication does satisfy a given vector space property, but nonetheless isn't a vector space.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Linear combinations</title>
             <slug>V2</slug>
             <description>
+                Determine if a Euclidean vector can be written as a linear combination of a given set of Euclidean vectors by solving an appropriate vector equation.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Spanning sets</title>
             <slug>V3</slug>
             <description>
+                Determine if a set of Euclidean vectors spans R^n by solving appropriate vector equations.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Subspaces</title>
             <slug>V4</slug>
             <description>
+                 Determine if a subset of R^n is a subspace or not.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Linear independence</title>
             <slug>V5</slug>
             <description>
+                Determine if a set of Euclidean vectors is linearly dependent or independent by solving an appropriate vector equation.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Basis identification</title>
             <slug>V6</slug>
             <description>
+                Explain why a set of Euclidean vectors is or is not a basis of R^n.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Basis of a subspace</title>
             <slug>V7</slug>
             <description>
+                Compute a basis for the subspace spanned by a given set of Euclidean vectors, and determine the dimension of the subspace.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Polynomial and matrix spaces</title>
             <slug>V8</slug>
             <description>
+                Answer questions about vector spaces of polynomials or matrices.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Homogeneous systems</title>
             <slug>V9</slug>
             <description>
+                Find a basis for the solution set of a homogeneous system of equations.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Linear maps</title>
             <slug>A1</slug>
             <description>
+                Determine if a map between vector spaces of polynomials is linear or not.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Standard matrices</title>
             <slug>A2</slug>
             <description>
+                Translate back and forth between a linear transformation of Euclidean spaces and its standard matrix, and perform related computations.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Image and kernel</title>
             <slug>A3</slug>
             <description>
+                Compute a basis for the kernel and a basis for the image of a linear map, and verify that the rank-nullity theorem holds for a given linear map.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Injectivity and surjectivity</title>
             <slug>A4</slug>
             <description>
+                Determine if a given linear map is injective and/or surjective.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Multiplying matrices</title>
             <slug>M1</slug>
             <description>
+                Multiply matrices.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Row operations as matrix multiplication</title>
             <slug>M2</slug>
             <description>
+                Express row operations through matrix multiplication.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Invertible matrices</title>
             <slug>M3</slug>
             <description>
+                Determine if a square matrix is invertible or not.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Finding a matrix inverse</title>
             <slug>M4</slug>
             <description>
+                Compute the inverse matrix of an invertible matrix.
             </description>
             <alignment>
             </alignment>
-        </objective>
-               <objective>
+        </outcome>
+               <outcome>
             <title>Row operations and determinants</title>
             <slug>G1</slug>
             <description>
+                Describe how a row operation affects the determinant of a matrix.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Determinants</title>
             <slug>G2</slug>
             <description>
+                Compute the determinant of a 4x4 matrix.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Eigenvalues</title>
             <slug>G3</slug>
             <description>
+                Find the eigenvalues of a 2x2 matrix.
             </description>
             <alignment>
             </alignment>
-        </objective>
-        <objective>
+        </outcome>
+        <outcome>
             <title>Eigenvectors</title>
             <slug>G4</slug>
             <description>
+                Find a basis for the eigenspace of a 4x4 matrix associated
+                with a given eigenvalue.
             </description>
             <alignment>
             </alignment>
-        </objective>
-    </objectives>
+        </outcome>
+    </outcomes>
 </bank>
