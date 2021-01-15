@@ -1,11 +1,11 @@
 load("__common__.sage")
 
 def generator():
-    A=random_matrix(QQ,4,4,algorithm='echelonizable',rank=choice([choice([2,3]),4]),upper_bound=9)
-    if A.rank()==4:
-        invertible=true
+    invertible = choice([true,false])
+    if invertible:
+        A=simple_random_matrix_of_rank(4,rows=4,columns=4)
     else:
-        invertible=false
+        A=simple_random_matrix_of_rank(choice([2,3]),rows=4,columns=4)
 
     return {
       "name": choice(["A","B","C","M","N","P","Q"]),

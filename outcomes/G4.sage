@@ -3,7 +3,7 @@ load("__common__.sage")
 def generator():
     l = choice([-1,1])*randrange(1,5)
     dim = randrange(1,4)
-    A = random_matrix(QQ,4,algorithm="echelonizable",rank=4-dim,upper_bound=9)
+    A=simple_random_matrix_of_rank(4-dim,rows=4,columns=4)
     B = A+l*identity_matrix(4)
 
     #Find kernel basis

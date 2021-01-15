@@ -1,7 +1,7 @@
 load("__common__.sage")
 
 def generator():
-    A = matrix([[choice([-1,1])*randrange(1,7) for _ in range(0,4)] for _ in range(0,4)])
+    A = matrix([[choice([-1,1])*randrange(1,6) for _ in range(0,4)] for _ in range(0,4)])
     line = randint(1,3)
     indices = choice(([(line,0),(line,1),(line,2),(line,3)],[(0,line),(1,line),(2,line),(3,line)]))
     shuffle(indices)
