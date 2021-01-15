@@ -1,30 +1,42 @@
 load("__common__.sage")
 
 def generator():
-    # random row scaling
-    row = randrange(0,4)
-    scale = randrange(2,6)*choice([-1,1])
-    scale_matrix = identity_matrix(4).with_rescaled_row(row,scale)
-    scale_op = rowOp("diagonal",row+1,row+1,scale)
-    # random row swapping
-    rows = sample([0,1,2,3],2)
-    shuffle(rows)
-    swap_matrix = identity_matrix(4).with_swapped_rows(rows[0],rows[1])
-    swap_op = rowOp("permutation",rows[0]+1, rows[1]+1)
-    # random row adding 
-    rows = sample([0,1,2,3],2)
-    shuffle(rows)
-    scale = randrange(2,6)*choice([-1,1])
-    add_matrix = identity_matrix(4).with_added_multiple_of_row(rows[0],rows[1],scale)
-    add_op = rowOp("elementary",rows[0]+1,rows[1]+1,scale)
 
-    #choose two random ops
-    ops = sample([0,1,2],2)
-    shuffle(ops)
-    row_op1 = [scale_op,swap_op,add_op][ops[0]]
-    mat1 = [scale_matrix,swap_matrix,add_matrix][ops[0]]
-    row_op2 = [scale_op,swap_op,add_op][ops[1]]
-    mat2 = [scale_matrix,swap_matrix,add_matrix][ops[1]]
+    
+    #Choose omitted op
+    omitted_op = choice([0,1,2])
+    if omitted_op==0: #Omit diagonal
+        rows=sample([0,1,2,3],3)
+        mat1 = identity_matrix(4).with_swapped_rows(rows[0],rows[1])
+        row_op1 = rowOp("permutation",rows[0]+1, rows[1]+1)
+        
+        scale = randrange(2,6)*choice([-1,1])
+        mat2 = identity_matrix(4).with_added_multiple_of_row(rows[1],rows[2],scale)
+        row_op2 = rowOp("elementary",rows[1]+1,rows[2]+1,scale)
+
+    if omitted_op==1: #Omit permutation
+        rows=sample([0,1,2,3],2)
+        scale = randrange(2,6)*choice([-1,1])
+        mat1 = identity_matrix(4).with_rescaled_row(rows[0],scale)
+        row_op1 = rowOp("diagonal",rows[0]+1,rows[0]+1,scale)
+        
+        scale = randrange(2,6)*choice([-1,1])
+        mat2 = identity_matrix(4).with_added_multiple_of_row(rows[0],rows[1],scale)
+        row_op2 = rowOp("elementary",rows[0]+1,rows[1]+1,scale)
+        
+    if omitted_op==2: #Omit elementary
+        rows=sample([0,1,2,3],2)
+        scale = randrange(2,6)*choice([-1,1])
+        mat1 = identity_matrix(4).with_rescaled_row(rows[0],scale)
+        row_op1 = rowOp("diagonal",rows[0]+1,rows[0]+1,scale)
+        
+        mat2 = identity_matrix(4).with_swapped_rows(rows[0],rows[1])
+        row_op2 = rowOp("permutation",rows[0]+1, rows[1]+1)
+            
+    #Swap presentation order half the time
+    if choice([True,False]):
+        row_op1,row_op2 = row_op2,row_op1
+        mat1,mat2 = mat2,mat1
 
 
     name1, name2 = sample(["B","C","M","N","P","Q"],2)
