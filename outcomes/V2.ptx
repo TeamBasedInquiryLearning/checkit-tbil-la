@@ -19,7 +19,7 @@
   <answer>
      <me>\operatorname{RREF} <xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me>
      <ol>
-        <li> 
+        <li>
                 The vector equation <m><xsl:value-of select="veceq"/></m>  
                 <xsl:choose>
                     <xsl:when test="statement">has a solution.</xsl:when>
@@ -29,7 +29,7 @@
         <li>
             <p> <m><xsl:value-of select="combovector"/></m>
              <xsl:choose>
-                  <xsl:when test="lc"> is </xsl:when>
+                  <xsl:when test="is_linear_combo"> is </xsl:when>
                   <xsl:otherwise> is not </xsl:otherwise>
               </xsl:choose>
                  a linear combination of the vectors <m><xsl:value-of select="veclist"/></m>.

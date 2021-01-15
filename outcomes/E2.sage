@@ -8,7 +8,7 @@ def generator():
     #start with nice RREF
     max_number_of_pivots = min(rows,columns)-1
     number_of_pivots = randrange(2,max_number_of_pivots+1)
-    A = random_matrix(ZZ,rows,columns,algorithm='echelonizable',rank=number_of_pivots,upper_bound=13)
+    A = simple_random_matrix_of_rank(number_of_pivots,rows=rows,columns=columns)
 
     #Create an almost-RREF matrix by doing one row op to an RREF
 

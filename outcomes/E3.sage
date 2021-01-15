@@ -8,8 +8,7 @@ def generator():
     #start with nice RREF
     max_number_of_pivots = min(rows,columns) 
     number_of_pivots = randrange(2,max_number_of_pivots+1)
-    A = random_matrix(QQ,rows,columns,algorithm='echelonizable',rank=number_of_pivots,upper_bound=9)
-    A.subdivide([],[columns-1])
+    A = simple_random_matrix_of_rank(number_of_pivots,rows=rows,columns=columns,augmented=True)
 
     # construct variables
     xs=[var("x_"+str(i+1)) for i in range(0,columns-1)]
