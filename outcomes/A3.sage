@@ -4,7 +4,7 @@ def generator():
     # create a mxn standard matrix
     columns = randrange(3,4)
     rows = 7-columns
-    A = simple_random_matrix_of_rank(min(rows,columns),rows=rows,columns=columns)
+    A = simple_random_matrix_of_rank(min(rows,columns)-1,rows=rows,columns=columns)
 
     # construct variables
     xs=choice([
