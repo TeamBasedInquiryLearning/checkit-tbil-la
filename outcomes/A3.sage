@@ -2,48 +2,42 @@ load("__common__.sage")
 
 def generator():
     # create a mxn standard matrix
-    columns = randrange(3,4)
+    columns = 4
     rows = 7-columns
-    A = simple_random_matrix_of_rank(min(rows,columns),rows=rows,columns=columns)
+    rank = randrange(2,4)
+    nullity = columns-rank
+    A = simple_random_matrix_of_rank(rank,rows=rows,columns=columns)
 
     # construct variables
     xs=choice([
-      column_matrix(vector([var("x_"+str(i+1)) for i in range(0,columns)])),
-      column_matrix(vector([var("x"),var("y"),var("z"),var("zw",latex_name="w")][0:columns])),
+      [var("x_"+str(i+1)) for i in range(columns)],
+      [var("x"),var("y"),var("z"),var("zw",latex_name="w")][:columns],
     ])
-
-    #Get kernel set
+    xs_vector = column_matrix(vector(xs))
     free_vars = [var("a"), var("b"), var("c"), var("d")]
-    kernelbasis=A.right_kernel(basis='pivot').basis()
 
-    solutions = column_matrix(zero_vector(ZZ, len(A.columns())))
-    # add span of homogeneous general solution
-    predicate = []
-    for v in kernelbasis:
-        free_var = free_vars.pop(0)
-        predicate.append(free_var)
-        predicate.append(",")
-        solutions += free_var*column_matrix(v)
-    if (len(predicate) > 0):
-        predicate.pop() #Remove extra comma
-        predicate.append(LatexExpr(r"\in\mathbb{R}"))
-        kernel = setBuilder(solutions,predicate)
-    else:
-        kernel = setBuilder(solutions)
+    #Get kernel/image
+    kernel_basis=A.right_kernel(basis='pivot').basis()
+    kernel_rep=column_matrix(sum([free_vars[i]*kernel_basis[i] for i in range(nullity)]))
+    kernel_predicate = [LatexExpr(",".join([latex(v) for v in free_vars[:nullity]])),LatexExpr(r"\in\mathbb{R}")]
+    kernel = setBuilder(kernel_rep,kernel_predicate)
+    image_basis=[A.column(i) for i in A.pivots()]
+    image_rep=column_matrix(sum([free_vars[i]*image_basis[i] for i in range(rank)]))
+    image_predicate = [LatexExpr(",".join([latex(v) for v in free_vars[:rank]])),LatexExpr(r"\in\mathbb{R}")]
+    image = setBuilder(image_rep,image_predicate)
 
-    #Get image basis    
-    imagebasis=[A.column(i) for i in A.pivots()]
 
     return {
       "columns": columns,
       "rows": rows,
-      "Tvar": A*xs,
-      "varvector": xs,
+      "Tvar": A*xs_vector,
+      "varvector": xs_vector,
       "matrix": A,
       "rref": A.rref(),
-      "imagebasis": vectorSet(imagebasis),
-      "kernelbasis": vectorSet(kernelbasis),
+      "image_basis": vectorSet(image_basis),
+      "kernel_basis": vectorSet(kernel_basis),
+      "image": image,
       "kernel": kernel,
-      "rank": len(imagebasis),
-      "nullity": len(kernelbasis)
+      "rank": rank,
+      "nullity": columns-rank,
     }

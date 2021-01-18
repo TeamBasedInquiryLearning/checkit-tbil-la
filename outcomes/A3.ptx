@@ -12,15 +12,15 @@
       <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
       <ol>
           <li>
-              <me>\operatorname{Im}\ T = \operatorname{span}\ <xsl:value-of select="imagebasis"/></me>
-              <me>\operatorname{ker}\ T = <xsl:value-of select="kernel"/></me>
+              <m>\operatorname{Im}\ T =  <xsl:value-of select="image"/></m> and
+              <m>\operatorname{ker}\ T = <xsl:value-of select="kernel"/></m>
           </li>
           <li>
-              A basis of <m>\operatorname{Im}\ T</m> is <m><xsl:value-of select="imagebasis"/></m>.
-              A basis of <m>\operatorname{ker}\ T</m> is <m><xsl:value-of select="kernelbasis"/></m>
+              A basis of <m>\operatorname{Im}\ T</m> is <m><xsl:value-of select="image_basis"/></m>.
+              A basis of <m>\operatorname{ker}\ T</m> is <m><xsl:value-of select="kernel_basis"/></m>
           </li>
           <li>
-              The rank of <m>T</m> is <m><xsl:value-of select="rank"/></m>, the nullity of <m>T</m> is <m><xsl:value-of select="nullity"/></m>, 
+              The rank of <m>T</m> is <m><xsl:value-of select="rank"/></m>, the nullity of <m>T</m> is <m><xsl:value-of select="nullity"/></m>,
               and the dimension of the domain of <m>T</m> is <m><xsl:value-of select="columns"/></m>. The rank-nullity theorem asserts that
               <m><xsl:value-of select="rank"/>+<xsl:value-of select="nullity"/>=<xsl:value-of select="columns"/></m>, which we see to be true.
           </li>
