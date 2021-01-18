@@ -39,5 +39,5 @@ def generator():
       "image": image,
       "kernel": kernel,
       "rank": rank,
-      "nullity": columns-rank,
+      "nullity": nullity,
     }
