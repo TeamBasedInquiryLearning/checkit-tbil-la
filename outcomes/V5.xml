@@ -1,11 +1,10 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
       <p>Consider the following statement.</p>
-        <ul><li> The set of vectors <m><xsl:value-of select="vecset"/></m> 
-            <xsl:choose>
-                <xsl:when test="prompt">is linearly independent.</xsl:when>
-                <xsl:otherwise>is linearly dependent.</xsl:otherwise>
-            </xsl:choose>
+        <ul><li>
+            The set of vectors <m>{{vecset}}</m> is linearly
+            {{#prompt}}in{{/prompt}}dependent.
         </li></ul>
     <ol>
         <li> Write an equivalent statement using a vector equation.</li>
@@ -13,21 +12,22 @@
     </ol>
   </statement>
   <answer>
-      <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
+      <p><me>\operatorname{RREF}{{matrix}}={{rref}}</me></p>
       <ol>
           <li>
-            The vector equation <m><xsl:value-of select="veceq"/></m> 
-                <xsl:choose>
-                    <xsl:when test="prompt">has no nontrivial solutions.</xsl:when>
-                    <xsl:otherwise>has (infinitely many) nontrivial solutions.</xsl:otherwise>
-                </xsl:choose>
+            The vector equation <m>{{veceq}}</m> has
+              {{#prompt}}
+                  no
+              {{/prompt}}
+              {{^prompt}}
+                  (infinitely-many)
+              {{/prompt}}
+              nontrivial solutions.
            </li>
-           <li> The set of vectors <m><xsl:value-of select="vecset"/></m> 
-                <xsl:choose>
-                    <xsl:when test="independent">is linearly independent.</xsl:when>
-                    <xsl:otherwise>is linearly dependent.</xsl:otherwise>
-                </xsl:choose>
-            </li>
+           <li>
+               The set of vectors <m>{{vecset}}</m> is linearly
+               {{#independent}}in{{/independent}}dependent.
+           </li>
        </ol>
   </answer>
 </exercise>

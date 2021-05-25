@@ -1,11 +1,14 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
       <p>Consider the following statement.</p>
-        <ul><li> The set of vectors <m><xsl:value-of select="vecset"/></m> 
-            <xsl:choose>
-                <xsl:when test="prompt">spans </xsl:when>
-                <xsl:otherwise>does not span </xsl:otherwise>
-            </xsl:choose>
+        <ul><li> The set of vectors <m>{{vecset}}</m> 
+            {{#prompt}}
+                spans
+            {{/prompt}}
+            {{^prompt}}
+                does not span
+            {{/prompt}}
             <m>\mathbb{R}^4</m>.
         </li></ul>
     <ol>
@@ -14,23 +17,28 @@
     </ol>
   </statement>
   <answer>
-     <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
+     <p><me>\operatorname{RREF}{{matrix}}={{rref}}</me></p>
      <ol>
-         <li>The vector equation <m><xsl:value-of select="vecComb"/>=\vec{v}</m> 
-                <xsl:choose>
-                    <xsl:when test="prompt"> has a solution for every </xsl:when>
-                    <xsl:otherwise> is inconsistent for some </xsl:otherwise>
-                </xsl:choose>
-                vector <m>\vec{v}</m> in <m>\mathbb{R}^4</m>.
-           </li>
-           <li>
-                The set of vectors <m><xsl:value-of select="vecset"/></m>
-                <xsl:choose>
-                      <xsl:when test="spans"> spans </xsl:when>
-                      <xsl:otherwise> does not span  </xsl:otherwise>
-                </xsl:choose>
-                <m>\mathbb{R}^4</m>.
-            </li>
+         <li>
+             The vector equation <m>{{vecComb}}=\vec{v}</m> 
+             {{#prompt}}
+                 has a solution for every
+             {{/prompt}}
+             {{^prompt}}
+                 is inconsistent for some
+             {{/prompt}}
+             vector <m>\vec{v}</m> in <m>\mathbb{R}^4</m>.
+         </li>
+         <li>
+            The set of vectors <m>{{vecset}}</m>
+            {{#prompt}}
+                spans
+            {{/prompt}}
+            {{^prompt}}
+                does not span
+            {{/prompt}}
+            <m>\mathbb{R}^4</m>.
+         </li>
        </ol>
   </answer>
 </exercise>

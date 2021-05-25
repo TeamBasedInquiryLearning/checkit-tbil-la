@@ -1,26 +1,23 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
-      Let <m>T:\mathbb{R}^<xsl:value-of select="columns"/> \to \mathbb{R}^<xsl:value-of select="rows"/></m> be the linear transformation given by the standard matrix
-      <m><xsl:value-of select="matrix"/>.</m>
+      <p>
+        Let <m>T:\mathbb{R}^{{columns}} \to \mathbb{R}^{{rows}}</m> be the linear transformation given by the standard matrix
+        <m>{{matrix}}</m>.
+      </p>
       <ol>
-            <li>Explain why <m>T</m> is or is not injective.</li>
-            <li>Explain why <m>T</m> is or is not surjective.</li>
+            <li><p>Explain why <m>T</m> is or is not injective.</p></li>
+            <li><p>Explain why <m>T</m> is or is not surjective.</p></li>
       </ol>
   </statement>
   <answer>
-      <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
+      <p><me>\operatorname{RREF}{{matrix}}={{rref}}</me></p>
       <ol>
           <li>
-              <xsl:choose>
-                  <xsl:when test="injective"> <m>T</m> is injective.</xsl:when>
-                  <xsl:otherwise> <m>T</m> is not injective</xsl:otherwise>
-              </xsl:choose>
+              <p><m>T</m> is {{^injective}}not {{/injective}} injective.</p>
           </li>
           <li>
-              <xsl:choose>
-                  <xsl:when test="surjective"> <m>T</m> is surjective.</xsl:when>
-                  <xsl:otherwise> <m>T</m> is not surjective</xsl:otherwise>
-              </xsl:choose>
+              <p><m>T</m> is {{#injective}}not {{/injective}} injective.</p>
           </li>
       </ol>
   </answer>

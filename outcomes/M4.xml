@@ -1,8 +1,9 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
-      <p>Show how to find the inverse of the matrix <m><xsl:value-of select="name"/>=<xsl:value-of select="matrix"/></m>.</p>
+      <p>Show how to find the inverse of the matrix <m>{{name}}={{matrix}}</m>.</p>
   </statement>
   <answer>
-      <me><xsl:value-of select="name"/>^{-1}=<xsl:value-of select="inverse"/></me>
+      <me>{{name}}^{-1}={{inverse}}</me>
   </answer>
 </exercise>

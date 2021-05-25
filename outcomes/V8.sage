@@ -1,10 +1,10 @@
 load("__common__.sage")
 
 def generator():
-    context=choice(["polynomial","matrix"])
-    task=choice(["independent","span"])
+    context=choice(["context_pol","context_mat"])
+    task=choice(["task_ind","task_spa"])
 
-    if task=="independent":
+    if task=="task_ind":
         n=4
  
         #Pick if yes a linear combination or no
@@ -17,7 +17,7 @@ def generator():
 
         result=independent
 
-    if task=="span":
+    if task=="task_spa":
         #Pick How many vectors in R4
         n=choice([4,5,6])
 
@@ -32,7 +32,7 @@ def generator():
         result=span
 
     #Create equation
-    if context=="polynomial":
+    if context=="context_pol":
         polys=[ sum([v[i]*x^i for i in range(0,len(v))]) for v in A.columns() ]
         vset=polys
         vars=[var("y_"+str(i+1)) for i in range(0,A.ncols())]
@@ -42,7 +42,7 @@ def generator():
         else:
             eq=lc
 
-    if context=="matrix":
+    if context=="context_mat":
         matrices = [ matrix(ZZ,2,v) for v in A.columns()]
         vset=matrices
         vars=[var("y_"+str(i+1)) for i in range(0,A.ncols())]
@@ -53,8 +53,8 @@ def generator():
             eq=lc
 
     return {
-      "task": task,
-      "context": context,
+      task: True,
+      context: True,
       "set": bracedSet(vset),
       "equation": eq,
       "result": result,

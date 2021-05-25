@@ -1,61 +1,50 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
-    <xsl:choose>
-      <xsl:when test="prompt='system'">
+      {{#prompt}}
+          {{#sys}}
         <p> Consider the system of equations</p>
-        <me><xsl:value-of select="system"/></me>
+              <me>{{system}}</me>
         <ol>
             <li> Write an augmented matrix corresponding to this system. </li>
             <li> Write a vector equation corresponding to this system. </li>
         </ol>
-      </xsl:when>
-      <xsl:when test="prompt='matrix'">
+          {{/sys}}
+          {{#mat}}
         <p> Consider the augmented matrix </p>
-            <me><xsl:value-of select="matrix"/></me>
+              <me>{{matrix}}</me>
          <ol>
             <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
             <li> Write a vector equation corresponding to this augmented matrix. </li>
         </ol>
-      </xsl:when>
-      <xsl:otherwise>
+          {{/mat}}
+          {{#vec}}
         <p>Consider the vector equation.</p>
-            <me><xsl:value-of select="vectorequation"/></me>
+              <me>{{vectorequation}}</me>
         <ol>
             <li> Write a system of scalar equations corresponding to this vector equation. </li>
             <li> Write an augmented matrix corresponding to this vector equation. </li>
         </ol>
-      </xsl:otherwise>
-    </xsl:choose>
+          {{/vec}}
+      {{/prompt}}
   </statement>
 
   <answer>
-    <xsl:choose>
-      <xsl:when test="prompt='system'">
-        <ol>
-            <li><me><xsl:value-of select="matrix"/></me> </li>
-            <li>
-                <me><xsl:value-of select="vectorequation"/></me>
-            </li>
-        </ol>
-      </xsl:when>
-      <xsl:when test="prompt='matrix'">
-          <ol>
-            <li>
-                <me><xsl:value-of select="system"/></me>
-            </li>
-            <li>
-                <me><xsl:value-of select="vectorequation"/></me>
-            </li>
-        </ol>
-      </xsl:when>
-      <xsl:otherwise>
-        <ol>
-            <li>
-                <me><xsl:value-of select="system"/></me>
-            </li>
-            <li><me><xsl:value-of select="matrix"/></me> </li>
-        </ol>
-      </xsl:otherwise>
-    </xsl:choose>
-  </answer>
+     <ol>
+        {{#prompt}}
+            {{#sys}}
+                <li><me>{{matrix}}</me></li>
+                <li><me>{{vectorequation}}</me></li>
+            {{/sys}}
+            {{#mat}}
+                <li><me>{{system}}</me></li>
+                <li><me>{{vectorequation}}</me></li>
+            {{/mat}}
+            {{#vec}}
+                <li><me>{{system}}</me></li>
+                <li><me>{{matrix}}</me></li>
+            {{/vec}}
+        {{/prompt}}
+      </ol>
+    </answer>
 </exercise>

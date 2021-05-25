@@ -1,12 +1,10 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
       <p>Consider the following statement.</p>
-        <ul><li> The set of vectors <m><xsl:value-of select="vecset"/></m> 
-            <xsl:choose>
-                <xsl:when test="prompt">is </xsl:when>
-                <xsl:otherwise>is not </xsl:otherwise>
-            </xsl:choose>
-            a basis of <m>\mathbb{R}^<xsl:value-of select="dim"/></m>.
+        <ul><li> The set of vectors <m>{{vecset}}</m> is
+            {{#prompt}}not {{/prompt}}
+            a basis of <m>\mathbb{R}^{{dim}}</m>.
         </li></ul>
     <ol>
         <li> Write an equivalent statement in terms of other vector properties.</li>
@@ -14,21 +12,20 @@
     </ol>
   </statement>
   <answer>
-     <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
+     <p><me>\operatorname{RREF}{{matrix}}={{rref}}</me></p>
      <ol>
-            <li> The set of vectors <m><xsl:value-of select="vecset"/></m> 
-                <xsl:choose>
-                    <xsl:when test="prompt">both spans <m>\mathbb{R}^<xsl:value-of select="dim"/></m> and is linearly independent.</xsl:when>
-                    <xsl:otherwise>either doesn't span <m>\mathbb{R}^<xsl:value-of select="dim"/></m> or is linearly dependent.</xsl:otherwise>
-                </xsl:choose>
-            </li>
-              <li>The set of vectors <m><xsl:value-of select="vecset"/></m> 
-             <xsl:choose>
-                  <xsl:when test="basis"> is </xsl:when>
-                  <xsl:otherwise> is not </xsl:otherwise>
-              </xsl:choose>
-        a basis of <m>\mathbb{R}^<xsl:value-of select="dim"/></m>
-          </li>
+         <li> The set of vectors <m>{{vecset}}</m> 
+                {{#prompt}}
+                    both spans <m>\mathbb{R}^{{dim}}</m> and is linearly independent.
+                {{/prompt}}
+                {{^prompt}}
+                    either doesn't span <m>\mathbb{R}^{{dim}}</m> or is linearly dependent.
+                {{/prompt}}
+         </li>
+         <li>
+                The set of vectors <m>{{vecset}}</m> is {{^basis}}not {{/basis}}
+                a basis of <m>\mathbb{R}^{{dim}}</m>
+         </li>
       </ol>
   </answer>
 </exercise>

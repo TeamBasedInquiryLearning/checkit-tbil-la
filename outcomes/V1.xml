@@ -1,15 +1,16 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
     <p>
       Let <m>V</m> be the set of all pairs <m>(x,y)</m> of real numbers
       together with the following operations:
     </p>
-      <me><xsl:value-of select="oplus"/></me><me><xsl:value-of select="otimes"/>.</me>
+      <me>{{#oplus}}{{.}}{{/oplus}}</me><me>{{#otimes}}{{.}}{{/otimes}}.</me>
     <p>
-      (a) Show that <xsl:value-of select="trueproperty"/>, that is:
+      (a) Show that {{trueproperty}}, that is:
     </p>
     <me>
-      <xsl:value-of select="truetex"/>.
+      {{truetex}}.
     </me>
     <p>
       (b) Explain why <m>V</m> nonetheless is not a vector space.
@@ -21,9 +22,9 @@
       any one of the following properties do not hold:
     </p>
     <ul>
-      <xsl:for-each select="falseproperties/*">
-        <li><xsl:value-of select="."/></li>
-      </xsl:for-each>
+          {{#falseproperties}}
+        <li>{{.}}</li>
+          {{/falseproperties}}
     </ul>
   </answer>
 </exercise>

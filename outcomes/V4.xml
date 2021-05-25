@@ -1,21 +1,15 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
     <p>Consider the following two sets of Euclidean vectors:
     </p>
     <me>
-          U=<xsl:value-of select="U"/> \hspace{2em}  W=<xsl:value-of select="W"/>
+          U={{U}} \hspace{2em}  W={{W}}
     </me>
-    <p> Explain why one of these sets is a subspace of <m>\mathbb{R}^<xsl:value-of select="dim"/></m> and one is not.
+    <p> Explain why one of these sets is a subspace of <m>\mathbb{R}^{{dim}}</m> and one is not.
     </p>
   </statement>
   <answer>
-     <xsl:choose>
-         <xsl:when test="subspace='U'">
-             <p><m>U</m> is a subspace of <m>\mathbb{R}^<xsl:value-of select="dim"/></m> and <m>W</m> is not.</p>
-         </xsl:when>
-         <xsl:otherwise>
-             <p><m>W</m> is a subspace of <m>\mathbb{R}^<xsl:value-of select="dim"/></m> and <m>U</m> is not.</p>
-         </xsl:otherwise>
-     </xsl:choose>
+    <p><m>{{subspace}}</m> is a subspace of <m>\mathbb{R}^{{dim}}</m> and <m>{{nonsubspace}}</m> is not.</p>
   </answer>
 </exercise>

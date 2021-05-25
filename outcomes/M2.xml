@@ -1,27 +1,32 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
       <p>Let <m>A</m> be a <m>4 \times 4</m> matrix.</p>
       <ol>
-          <li>Give a <m>4 \times 4</m> matrix <m><xsl:value-of select="name1"/></m> that may be used to perform the row operation <m><xsl:value-of select="row_op1"/></m>.</li>
-          <li>Give a <m>4 \times 4</m> matrix <m><xsl:value-of select="name2"/></m> that may be used to perform the row operation <m><xsl:value-of select="row_op2"/></m>.</li>
+          <li>Give a <m>4 \times 4</m> matrix <m>{{name1}}</m> that may be used to perform the row operation <m>{{row_op1}}</m>.</li>
+          <li>Give a <m>4 \times 4</m> matrix <m>{{name2}}</m> that may be used to perform the row operation <m>{{row_op2}}</m>.</li>
           <li>Use matrix multiplication to describe the matrix obtained by applying
-              <xsl:choose>
-                  <xsl:when test="swapped"><m><xsl:value-of select="row_op2"/></m> and then <m><xsl:value-of select="row_op1"/></m></xsl:when>
-                  <xsl:otherwise><m><xsl:value-of select="row_op1"/></m> and then <m><xsl:value-of select="row_op2"/></m></xsl:otherwise>
-              </xsl:choose>
+              {{#swapped}}
+              <m>{{row_op2}}</m> and then <m>{{row_op1}}</m>
+              {{/swapped}}
+              {{^swapped}}
+              <m>{{row_op1}}</m> and then <m>{{row_op2}}</m>
+              {{/swapped}}
               to <m>A</m> (note the order).
           </li>
       </ol>
   </statement>
   <answer>
        <ol>
-          <li><m><xsl:value-of select="name1"/>=<xsl:value-of select="mat1"/></m></li>
-          <li><m><xsl:value-of select="name2"/>=<xsl:value-of select="mat2"/></m></li>
+          <li><m>{{name1}}={{mat1}}</m></li>
+          <li><m>{{name2}}={{mat2}}</m></li>
           <li>
-              <xsl:choose>
-                  <xsl:when test="swapped"><m><xsl:value-of select="name1"/><xsl:value-of select="name2"/>A</m></xsl:when>
-                  <xsl:otherwise><m><xsl:value-of select="name2"/><xsl:value-of select="name1"/>A</m></xsl:otherwise>
-              </xsl:choose>
+              {{#swapped}}
+              <m>{{name1}}{{name2}}A</m>
+              {{/swapped}}
+              {{^swapped}}
+              <m>{{name2}}{{name1}}A</m>
+              {{/swapped}}
           </li>
       </ol>
   </answer>

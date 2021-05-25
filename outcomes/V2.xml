@@ -1,14 +1,11 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
       <p>Consider the following statement.</p>
         <ul>
             <li>
-            The vector <m><xsl:value-of select="combovector"/></m>  
-            <xsl:choose>
-                <xsl:when test="statement">is</xsl:when>
-                <xsl:otherwise>is not</xsl:otherwise>
-            </xsl:choose>
-                a linear combination of the vectors <m><xsl:value-of select="veclist"/></m>.
+            The vector <m>{{combovector}}</m> is {{^statement}}not {{/statement}}
+                a linear combination of the vectors <m>{{veclist}}</m>.
             </li>
         </ul>
     <ol>
@@ -17,22 +14,21 @@
     </ol>
   </statement>
   <answer>
-     <me>\operatorname{RREF} <xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me>
+     <me>\operatorname{RREF} {{matrix}}={{rref}}</me>
      <ol>
         <li>
-                The vector equation <m><xsl:value-of select="veceq"/></m>  
-                <xsl:choose>
-                    <xsl:when test="statement">has a solution.</xsl:when>
-                    <xsl:otherwise>has no solutions.</xsl:otherwise>
-                </xsl:choose>
-                </li>
+            The vector equation <m>{{veceq}}</m> has
+            {{#statement}}
+                a solution.
+            {{/statement}}
+            {{^statement}}
+                no solutions.
+            {{/statement}}
+        </li>
         <li>
-            <p> <m><xsl:value-of select="combovector"/></m>
-             <xsl:choose>
-                  <xsl:when test="is_linear_combo"> is </xsl:when>
-                  <xsl:otherwise> is not </xsl:otherwise>
-              </xsl:choose>
-                 a linear combination of the vectors <m><xsl:value-of select="veclist"/></m>.
+            <p>
+                <m>{{combovector}}</m> is {{^is_linear_combo}}not {{/is_linear_combo}}
+                 a linear combination of the vectors <m>{{veclist}}</m>.
             </p>
         </li>
     </ol>

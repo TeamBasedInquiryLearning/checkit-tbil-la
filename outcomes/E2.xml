@@ -1,35 +1,34 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
     <ol>
-            <li>Show that <me>\operatorname{RREF}<xsl:value-of select="A"/>=<xsl:value-of select="rref"/>.</me></li>
-            <li>Explain why the matrix <m>B=<xsl:value-of select="B"/></m> is or is not in reduced row echelon form.</li>
+        <li>Show that <me>\operatorname{RREF}{{A}}={{rref}}.</me></li>
+        <li>Explain why the matrix <m>B={{B}}</m> is or is not in reduced row echelon form.</li>
     </ol>
   </statement>
   <answer>
     <ol>
-        <li><m>\operatorname{RREF}<xsl:value-of select="A"/>=<xsl:value-of select="rref"/>.</m></li>
+        <li><me>\operatorname{RREF}{{A}}={{rref}}.</me></li>
         <li>
             <m>B</m> is
-                <xsl:choose>
-                    <xsl:when test="Brref">
-                         in reduced row echelon form because each pivot is a <m>1</m>, the pivots are descending to the right, 
-                        there are zeroes above and below each pivot, and all rows of zeroes are at the bottom.
-                    </xsl:when>
-                    <xsl:otherwise>
-                        not in reduced row echelon form because
-                        <xsl:choose>
-                            <xsl:when test="rowop='elementary'">
-                                not every entry above and below each pivot is zero.
-                            </xsl:when>
-                            <xsl:when test="rowop='permutation'">
-                                the pivots are not descending to the right.
-                            </xsl:when>
-                            <xsl:otherwise>
-                                the pivots are not all <m>1</m>.
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:otherwise>
-              </xsl:choose>
+            {{#Brref}}
+                in reduced row echelon form because each pivot is a <m>1</m>, the pivots are descending to the right, 
+                there are zeroes above and below each pivot, and all rows of zeroes are at the bottom.
+            {{/Brref}}
+            {{^Brref}}
+                not in reduced row echelon form because
+                {{#rowop}}
+                    {{#elementary}}
+                        not every entry above and below each pivot is zero.
+                    {{/elementary}}
+                    {{#permutation}}
+                        the pivots are not descending to the right.
+                    {{/permutation}}
+                    {{#diagonal}}
+                        the pivots are not all <m>1</m>.
+                    {{/diagonal}}
+                {{/rowop}}
+            {{/Brref}}
         </li>
     </ol>
   </answer>

@@ -49,13 +49,16 @@ def generator():
     #Write sets in order subspace, not subspace
     predicates=[subspacePredicate,notsubspacePredicate]
     #Randomly swap order so 2nd is subspace
-    subspace = choice(["U","W"])
-    if(subspace=="W"):
+    labels = ["U","W"]
+    swapped = choice([True,False])
+    if(swapped):
         predicates.reverse()
+        labels.reverse()
 
     return {
       "U": setBuilder(column_matrix(v),[predicates[0]]),
       "W": setBuilder(column_matrix(v),[predicates[1]]),
-      "subspace": subspace,
+      "subspace": labels[0],
+      "nonsubspace": labels[1],
       "dim": dim
     }

@@ -1,6 +1,7 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
-    <p>Consider the subspace <me>W=\operatorname{span} <xsl:value-of select="vlist"/>.</me>
+    <p>Consider the subspace <me>W=\operatorname{span} {{vlist}}.</me>
     </p>
     <ol>
         <li> Explain how to find a basis of <m>W</m>.</li>
@@ -8,10 +9,10 @@
     </ol>
   </statement>
   <answer>
-      <p><me>\operatorname{RREF}<xsl:value-of select="matrix"/>=<xsl:value-of select="rref"/></me></p>
+      <p><me>\operatorname{RREF}{{matrix}}={{rref}}</me></p>
      <ol>
-          <li>A basis of <m>W</m> is <m><xsl:value-of select="basis"/></m>.</li>
-          <li>The dimension of <m>W</m> is <m><xsl:value-of select="dimension"/></m>.</li>
+          <li>A basis of <m>W</m> is <m>{{basis}}</m>.</li>
+          <li>The dimension of <m>W</m> is <m>{{dimension}}</m>.</li>
       </ol>
   </answer>
 </exercise>

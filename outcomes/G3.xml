@@ -1,9 +1,10 @@
-<exercise>
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
-      <p>Explain how to find the eigenvalues of the matrix <m><xsl:value-of select="matrix"/></m>.</p>
+      <p>Explain how to find the eigenvalues of the matrix <m>{{matrix}}</m>.</p>
   </statement>
   <answer>
-      <p>The characteristic polynomial of <m><xsl:value-of select="matrix"/></m> is <m><xsl:value-of select="charpoly"/></m>.</p>
-      <p>The eigenvalues of <m><xsl:value-of select="matrix"/></m> are <m><xsl:value-of select="e1"/></m> and <m><xsl:value-of select="e2"/></m>.</p>
+      <p>The characteristic polynomial of <m>{{matrix}}</m> is <m>{{charpoly}}</m>.</p>
+      <p>The eigenvalues of <m>{{matrix}}</m> are <m>{{e1}}</m> and <m>{{e2}}</m>.</p>
   </answer>
 </exercise>
