@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
+  <statement>
+      <p>Consider the following statement.</p>
+        <ul><li>
+            The set of vectors <m>{{vecset}}</m> is linearly
+            {{#prompt}}in{{/prompt}}dependent.
+        </li></ul>
+    <ol>
+        <li> Write an equivalent statement using a vector equation.</li>
+        <li> Explain why your statement is true or false.</li>
+    </ol>
+  </statement>
+  <answer>
+      <p><me>\operatorname{RREF}{{matrix}}={{rref}}</me></p>
+      <ol>
+          <li>
+            The vector equation <m>{{veceq}}</m> has
+              {{#prompt}}
+                  no
+              {{/prompt}}
+              {{^prompt}}
+                  (infinitely-many)
+              {{/prompt}}
+              nontrivial solutions.
+           </li>
+           <li>
+               The set of vectors <m>{{vecset}}</m> is linearly
+               {{#independent}}in{{/independent}}dependent.
+           </li>
+       </ol>
+  </answer>
+</exercise>

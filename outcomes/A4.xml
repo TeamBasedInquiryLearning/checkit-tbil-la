@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
+  <statement>
+      <p>
+        Let <m>T:\mathbb{R}^{{columns}} \to \mathbb{R}^{{rows}}</m> be the linear transformation given by the standard matrix
+        <m>{{matrix}}</m>.
+      </p>
+      <ol>
+            <li><p>Explain why <m>T</m> is or is not injective.</p></li>
+            <li><p>Explain why <m>T</m> is or is not surjective.</p></li>
+      </ol>
+  </statement>
+  <answer>
+      <p><me>\operatorname{RREF}{{matrix}}={{rref}}</me></p>
+      <ol>
+          <li>
+              <p><m>T</m> is {{^injective}}not {{/injective}} injective.</p>
+          </li>
+          <li>
+              <p><m>T</m> is {{#injective}}not {{/injective}} injective.</p>
+          </li>
+      </ol>
+  </answer>
+</exercise>

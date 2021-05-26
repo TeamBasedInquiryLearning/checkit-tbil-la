@@ -21,7 +21,7 @@ def generator():
     system=[A.delete_columns([columns-1]).row(r)*vector(xs)==A.column(-1)[r] for r in range(0,rows)]
 
     #randomly swap exercise query
-    prompt = choice(["system","matrix","vector"])
+    prompt = choice([{"sys":True},{"mat":True},{"vec":True}])
 
     return {
         "system": latex_system_from_matrix(A,variable_list=xs),

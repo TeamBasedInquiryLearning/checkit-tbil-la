@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
+  <statement>
+      <p>
+      Let <m>T:\mathbb{R}^{{columns}} \to \mathbb{R}^{{rows}}</m>
+      be the linear transformation given by
+      <me>T\left( {{varvector}} \right) = {{Tvar}}.</me>
+      </p>
+      <ol>
+            <li>Explain how to find the image of <m>T</m> and the kernel of <m>T</m>.</li>
+            <li>Explain how to find a basis of the image of <m>T</m> and a basis of the kernel of <m>T</m>.</li>
+            <li>Explain how to find the rank and nullity of <m>T</m>, and why the rank-nullity theorem holds for <m>T</m>.</li>
+      </ol>
+  </statement>
+  <answer>
+      <p><me>\operatorname{RREF}{{matrix}}={{rref}}</me></p>
+      <ol>
+          <li>
+              <p>
+              <m>\operatorname{Im}\ T =  {{image}}</m> and
+              <m>\operatorname{ker}\ T = {{kernel}}</m>
+              </p>
+          </li>
+          <li>
+              <p>
+              A basis of <m>\operatorname{Im}\ T</m> is <m>{{image_basis}}</m>.
+              A basis of <m>\operatorname{ker}\ T</m> is <m>{{kernel_basis}}</m>.
+              </p>
+          </li>
+          <li>
+              <p>
+              The rank of <m>T</m> is <m>{{rank}}</m>, the nullity of <m>T</m> is <m>{{nullity}}</m>,
+              and the dimension of the domain of <m>T</m> is <m>{{columns}}</m>. The rank-nullity theorem asserts that
+              <m>{{rank}}+{{nullity}}={{columns}}</m>, which we see to be true.
+              </p>
+          </li>
+      </ol>
+  </answer>
+</exercise>

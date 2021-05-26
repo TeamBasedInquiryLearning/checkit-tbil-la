@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
+  <statement>
+    <p>Show how to find the solution set for the following 
+        {{#prompt_system}}
+            system of linear equations.
+        <me>{{system}}</me>
+        {{/prompt_system}}
+        {{#prompt_vectoreq}}
+        vector equation <me>{{vectoreq}}</me>
+        {{/prompt_vectoreq}}
+     </p>
+  </statement>
+
+  <answer>
+      <me>\mathrm{RREF}{{matrix}}={{rref}}</me>
+      <p>The solution set is <m>{{solution}}</m>.</p>
+  </answer>
+</exercise>

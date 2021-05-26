@@ -12,15 +12,15 @@ def generator():
 
     #Create an almost-RREF matrix by doing one row op to an RREF
 
-    rowop = choice(["elementary","diagonal","permutation"])
+    rowop = choice([{"elementary":True},{"diagonal":True},{"permutation":True}])
     s=ZZ(choice([randrange(2,8)])*int(choice([-1,1])))
-    if rowop=="elementary":
+    if "elementary" in rowop:
         r=randrange(0,number_of_pivots)
         rr=choice(list(range(0,r))+list(range(r+1,number_of_pivots)))
         E=elementary_matrix(rows, row1=r, row2=rr, scale=s)
-    if rowop=="diagonal":
+    elif "diagonal" in rowop:
         E=elementary_matrix(rows, row1=randrange(0,number_of_pivots), scale=s)
-    if rowop=="permutation":
+    else:
         r=randrange(0,number_of_pivots)
         rr=choice(list(range(0,r))+list(range(r+1,number_of_pivots)))
         E=elementary_matrix(rows, row1=r, row2=rr)

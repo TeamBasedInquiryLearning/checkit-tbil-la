@@ -22,6 +22,7 @@ def generator():
         'matrix': A,
         'rref': rref,
         'solution': latex_solution_set_from_matrix(A),
-        'prompt': prompt,
+        'prompt_system': prompt=='system',
+        'prompt_vectoreq': prompt=='vectoreq',
         'vectoreq': vectorEquation(A)
     }

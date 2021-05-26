@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
+  <statement>
+      <p>Consider the following statement.</p>
+        <ul>
+            <li>
+            The vector <m>{{combovector}}</m> is {{^statement}}not {{/statement}}
+                a linear combination of the vectors <m>{{veclist}}</m>.
+            </li>
+        </ul>
+    <ol>
+        <li> Write an equivalent statement using a vector equation.</li>
+        <li> Explain why your statement is true or false.</li>
+    </ol>
+  </statement>
+  <answer>
+     <me>\operatorname{RREF} {{matrix}}={{rref}}</me>
+     <ol>
+        <li>
+            The vector equation <m>{{veceq}}</m> has
+            {{#statement}}
+                a solution.
+            {{/statement}}
+            {{^statement}}
+                no solutions.
+            {{/statement}}
+        </li>
+        <li>
+            <p>
+                <m>{{combovector}}</m> is {{^is_linear_combo}}not {{/is_linear_combo}}
+                 a linear combination of the vectors <m>{{veclist}}</m>.
+            </p>
+        </li>
+    </ol>
+
+  </answer>
+</exercise>

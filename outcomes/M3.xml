@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
+  <statement>
+      <p>Explain why the matrix <m>{{name}}={{matrix}}</m> is or is not invertible.</p>
+  </statement>
+  <answer>
+      <p><me>\operatorname{RREF}{{matrix}}={{rref}}</me></p>
+      <p><m>{{name}}</m> is {{^invertible}}not {{/invertible}} invertible.</p>
+  </answer>
+</exercise>

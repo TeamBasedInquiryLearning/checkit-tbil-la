@@ -1,9 +1,0 @@
-<exercise>
-  <statement>
-      <p>Explain how to find a basis for the eigenspace associated to the eigenvalue <m><xsl:value-of select="eigenvalue"/></m> in the matrix <me><xsl:value-of select="matrix"/></me></p>
-  </statement>
-  <answer>
-      <p><me>\operatorname{RREF}<xsl:value-of select="matrix-minus-lambda"/>=<xsl:value-of select="rref"/></me></p>
-      <p>A basis of the eigenspace is <m><xsl:value-of select="basis"/></m>.</p>
-  </answer>
-</exercise>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercise xmlns="https://spatext.clontz.org" version="0.0">
+  <statement>
+    <p>
+        Consider the following maps of polynomials <m>S:\mathcal{P}\rightarrow\mathcal{P}</m>
+        and <m>T:\mathcal{P}\rightarrow\mathcal{P}</m> defined by
+        <me>
+            S({{f_letter}}(x))=
+                {{#swapped}}
+                    {{nonlinear_trans}}
+                {{/swapped}}
+                {{^swapped}}
+                    {{linear_trans}}
+                {{/swapped}}
+                \hspace{1em} \text{and} \hspace{1em}
+            T({{f_letter}}(x))=
+                {{^swapped}}
+                    {{nonlinear_trans}}
+                {{/swapped}}
+                {{#swapped}}
+                    {{linear_trans}}
+                {{/swapped}}
+        </me>
+        Explain why one these maps is a linear transformation and why the other map is not.
+    </p>
+  </statement>
+  <answer>
+      {{#swapped}}
+            <p><m>S</m> is not linear and <m>T</m> is linear.</p>
+      {{/swapped}}
+      {{^swapped}}
+            <p><m>S</m> is linear and <m>T</m> is not linear.</p>
+      {{/swapped}}
+  </answer>
+</exercise>
