@@ -17,7 +17,7 @@
               <p><m>T</m> is {{^injective}}not {{/injective}} injective.</p>
           </li>
           <li>
-              <p><m>T</m> is {{#injective}}not {{/injective}} injective.</p>
+              <p><m>T</m> is {{^surjective}}not {{/surjective}} surjective.</p>
           </li>
       </ol>
   </answer>
