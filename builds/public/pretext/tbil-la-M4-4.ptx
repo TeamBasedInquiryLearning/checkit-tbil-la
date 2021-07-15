@@ -1,0 +1,18 @@
+<exercise checkit-seed="0004" checkit-slug="M4" checkit-title="Finding a matrix inverse">
+  <statement>
+      <p>Show how to find the inverse of the matrix <m>C=\left[\begin{array}{cccc}
+1 &amp; 4 &amp; 4 &amp; -1 \\
+1 &amp; 5 &amp; 5 &amp; -1 \\
+1 &amp; 2 &amp; 3 &amp; 2 \\
+1 &amp; 1 &amp; 2 &amp; 3
+\end{array}\right]</m>.</p>
+  </statement>
+  <answer>
+      <me>C^{-1}=\left[\begin{array}{cccc}
+4 &amp; -3 &amp; -1 &amp; 1 \\
+-1 &amp; 2 &amp; -4 &amp; 3 \\
+0 &amp; -1 &amp; 4 &amp; -3 \\
+-1 &amp; 1 &amp; -1 &amp; 1
+\end{array}\right]</me>
+  </answer>
+</exercise>

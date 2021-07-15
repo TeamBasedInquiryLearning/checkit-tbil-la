@@ -1,0 +1,38 @@
+<exercise checkit-seed="0004" checkit-slug="A4" checkit-title="Injectivity and surjectivity">
+  <statement>
+      <p>
+        Let <m>T:\mathbb{R}^4 \to \mathbb{R}^4</m> be the linear transformation given by the standard matrix
+        <m>\left[\begin{array}{cccc}
+1 &amp; 1 &amp; 1 &amp; 1 \\
+4 &amp; 5 &amp; 7 &amp; 2 \\
+1 &amp; 4 &amp; 10 &amp; -4 \\
+1 &amp; 2 &amp; 4 &amp; -3
+\end{array}\right]</m>.
+      </p>
+      <ol>
+            <li><p>Explain why <m>T</m> is or is not injective.</p></li>
+            <li><p>Explain why <m>T</m> is or is not surjective.</p></li>
+      </ol>
+  </statement>
+  <answer>
+      <p><me>\operatorname{RREF}\left[\begin{array}{cccc}
+1 &amp; 1 &amp; 1 &amp; 1 \\
+4 &amp; 5 &amp; 7 &amp; 2 \\
+1 &amp; 4 &amp; 10 &amp; -4 \\
+1 &amp; 2 &amp; 4 &amp; -3
+\end{array}\right]=\left[\begin{array}{cccc}
+1 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 1 &amp; 3 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right]</me></p>
+      <ol>
+          <li>
+              <p><m>T</m> is not  injective.</p>
+          </li>
+          <li>
+              <p><m>T</m> is not  surjective.</p>
+          </li>
+      </ol>
+  </answer>
+</exercise>

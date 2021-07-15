@@ -1,0 +1,53 @@
+<exercise checkit-seed="0005" checkit-slug="V9" checkit-title="Homogeneous systems">
+  <statement>
+      <p>Consider the following homogeneous system of equations.</p>
+      <me>\begin{matrix}
+ -2 \, x_{1} &amp;  +  &amp; 6 \, x_{2} &amp;  -  &amp; 6 \, x_{3} &amp;  -  &amp; 2 \, x_{4} &amp;  +  &amp; 4 \, x_{5} &amp; = &amp; 0 \\
+ 3 \, x_{1} &amp;  -  &amp; 9 \, x_{2} &amp;  +  &amp; 9 \, x_{3} &amp;  +  &amp; x_{4} &amp;  &amp;  &amp; = &amp; 0 \\
+ -3 \, x_{1} &amp;  +  &amp; 9 \, x_{2} &amp;  -  &amp; 9 \, x_{3} &amp;  -  &amp; 2 \, x_{4} &amp;  +  &amp; 3 \, x_{5} &amp; = &amp; 0 \\
+ \end{matrix}</me>
+    <ol>
+        <li> Find the solution space of this system.</li>
+        <li> Find a basis of the solution space.</li>
+    </ol>
+  </statement>
+  <answer>
+     <p><me>\operatorname{RREF}\left[\begin{array}{ccccc|c}
+-2 &amp; 6 &amp; -6 &amp; -2 &amp; 4 &amp; 0 \\
+3 &amp; -9 &amp; 9 &amp; 1 &amp; 0 &amp; 0 \\
+-3 &amp; 9 &amp; -9 &amp; -2 &amp; 3 &amp; 0
+\end{array}\right]=\left[\begin{array}{ccccc|c}
+1 &amp; -3 &amp; 3 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -3 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right]</me></p>
+     <ol>
+          <li>The solution space is <m> \left\{ \left[\begin{array}{c}
+3 \, a - 3 \, b - c \\
+a \\
+b \\
+3 \, c \\
+c
+\end{array}\right] \,\middle|\, a,b,c \in\mathbb R \right\} </m> </li>
+          <li>A basis of the solution space is <m>\left\{ \left[\begin{array}{c}
+3 \\
+1 \\
+0 \\
+0 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+0 \\
+1 \\
+0 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+0 \\
+0 \\
+3 \\
+1
+\end{array}\right] \right\}</m>.</li>
+      </ol>
+  </answer>
+</exercise>

@@ -1,0 +1,19 @@
+<exercise checkit-seed="0008" checkit-slug="A1" checkit-title="Linear maps">
+  <statement>
+    <p>
+        Consider the following maps of polynomials <m>S:\mathcal{P}\rightarrow\mathcal{P}</m>
+        and <m>T:\mathcal{P}\rightarrow\mathcal{P}</m> defined by
+        <me>
+            S(h(x))=
+                    2 \, x^{2} - 5 \, h\left(3\right)
+                \hspace{1em} \text{and} \hspace{1em}
+            T(h(x))=
+                    h\left(x\right) + 5 \, h'\left(5\right)
+        </me>
+        Explain why one these maps is a linear transformation and why the other map is not.
+    </p>
+  </statement>
+  <answer>
+            <p><m>S</m> is not linear and <m>T</m> is linear.</p>
+  </answer>
+</exercise>
