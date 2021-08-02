@@ -1,0 +1,32 @@
+<exercise checkit-seed="0008" checkit-slug="E3" checkit-title="Solving linear systems">
+  <statement>
+    <p>Show how to find the solution set for the following 
+            system of linear equations.
+        <me>\begin{matrix}
+ -4 \, x_{1} &amp;  -  &amp; 4 \, x_{2} &amp;  -  &amp; x_{3} &amp; = &amp; -5 \\
+ 5 \, x_{1} &amp;  +  &amp; 5 \, x_{2} &amp;  +  &amp; x_{3} &amp; = &amp; 7 \\
+ -4 \, x_{1} &amp;  -  &amp; 4 \, x_{2} &amp;  +  &amp; 2 \, x_{3} &amp; = &amp; -14 \\
+ 2 \, x_{1} &amp;  +  &amp; 2 \, x_{2} &amp;  +  &amp; 4 \, x_{3} &amp; = &amp; -8 \\
+ \end{matrix}</me>
+     </p>
+  </statement>
+
+  <answer>
+      <me>\mathrm{RREF}\left[\begin{array}{ccc|c}
+-4 &amp; -4 &amp; -1 &amp; -5 \\
+5 &amp; 5 &amp; 1 &amp; 7 \\
+-4 &amp; -4 &amp; 2 &amp; -14 \\
+2 &amp; 2 &amp; 4 &amp; -8
+\end{array}\right]=\left[\begin{array}{ccc|c}
+1 &amp; 1 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; -3 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right]</me>
+      <p>The solution set is <m> \left\{ \left[\begin{array}{c}
+-a + 2 \\
+a \\
+-3
+\end{array}\right] \,\middle|\, a \in\mathbb R \right\} </m>.</p>
+  </answer>
+</exercise>

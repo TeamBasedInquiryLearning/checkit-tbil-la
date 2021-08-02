@@ -1,0 +1,28 @@
+<exercise checkit-seed="0007" checkit-slug="E3" checkit-title="Solving linear systems">
+  <statement>
+    <p>Show how to find the solution set for the following 
+            system of linear equations.
+        <me>\begin{matrix}
+ &amp;  &amp; x_{2} &amp;  &amp;  &amp; = &amp; 4 \\
+ &amp;  &amp; x_{2} &amp;  +  &amp; x_{3} &amp; = &amp; 2 \\
+ x_{1} &amp;  &amp;  &amp;  +  &amp; 4 \, x_{3} &amp; = &amp; -5 \\
+ &amp;  -  &amp; 3 \, x_{2} &amp;  -  &amp; 5 \, x_{3} &amp; = &amp; -1 \\
+ \end{matrix}</me>
+     </p>
+  </statement>
+
+  <answer>
+      <me>\mathrm{RREF}\left[\begin{array}{ccc|c}
+0 &amp; 1 &amp; 0 &amp; 4 \\
+0 &amp; 1 &amp; 1 &amp; 2 \\
+1 &amp; 0 &amp; 4 &amp; -5 \\
+0 &amp; -3 &amp; -5 &amp; -1
+\end{array}\right]=\left[\begin{array}{ccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right]</me>
+      <p>The solution set is <m> \{\} </m>.</p>
+  </answer>
+</exercise>

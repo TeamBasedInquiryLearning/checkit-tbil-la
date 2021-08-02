@@ -1,0 +1,25 @@
+<exercise checkit-seed="0002" checkit-slug="M1" checkit-title="Multiplying matrices">
+  <statement>
+      <p>Of the following three matrices, only two may be multiplied.
+      <me>
+          A=\left[\begin{array}{cccc}
+-2 &amp; -1 &amp; 5 &amp; 3 \\
+1 &amp; 0 &amp; -2 &amp; 0
+\end{array}\right] \hspace{1em} B=\left[\begin{array}{cccc}
+-2 &amp; 2 &amp; -3 &amp; -4 \\
+2 &amp; -1 &amp; 0 &amp; 6 \\
+-3 &amp; 3 &amp; -5 &amp; -5
+\end{array}\right] \hspace{1em} C=\left[\begin{array}{ccc}
+1 &amp; -3 &amp; 0 \\
+-1 &amp; 4 &amp; 0
+\end{array}\right]
+      </me>
+      Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </statement>
+  <answer>
+      <me>CB=\left[\begin{array}{cccc}
+-8 &amp; 5 &amp; -3 &amp; -22 \\
+10 &amp; -6 &amp; 3 &amp; 28
+\end{array}\right]</me>
+  </answer>
+</exercise>
