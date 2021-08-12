@@ -4,7 +4,7 @@
       <p>Explain why the matrix <m>{{name}}={{matrix}}</m> is or is not invertible.</p>
   </statement>
   <answer>
-      <p><me>\operatorname{RREF}{{matrix}}={{rref}}</me></p>
+      <p><me>\mathrm{RREF}\,{{matrix}}={{rref}}</me></p>
       <p><m>{{name}}</m> is {{^invertible}}not {{/invertible}} invertible.</p>
   </answer>
 </exercise>

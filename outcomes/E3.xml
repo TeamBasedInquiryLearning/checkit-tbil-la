@@ -1,15 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
-    <p>Show how to find the solution set for the following 
-        {{#prompt_system}}
-            system of linear equations.
-        <me>{{system}}</me>
-        {{/prompt_system}}
-        {{#prompt_vectoreq}}
-        vector equation <me>{{vectoreq}}</me>
-        {{/prompt_vectoreq}}
-     </p>
+    <p>
+Consider the following 
+        {{#system}}
+system of linear equations.n<me>{{system}}</me>
+        {{/system}}
+        {{#vectoreq}}
+vector equation. <me>{{vectoreq}}</me>
+        {{/vectoreq}}
+    </p>
+    <ol>
+      <li>
+        <p>
+Explain how to find a simpler
+          {{#system}}system{{/system}}
+          {{#vectoreq}}vector equation{{/vectoreq}}
+that has the same solution set.
+        </p>
+      </li>
+      <li>
+        <p>
+Explain how to find the solution set of this simpler
+          {{#system}}system.{{/system}}
+          {{#vectoreq}}vector equation.{{/vectoreq}}
+        </p>
+      </li>
+    </ol>
   </statement>
 
   <answer>

@@ -4,6 +4,6 @@
       <p>Show how to compute the determinant of the matrix <me>A={{matrix}}.</me>.</p>
   </statement>
   <answer>
-      <me>\operatorname{det}\ {{matrix}}={{determinant}}</me>
+      <me>\mathrm{det}\,{{matrix}}={{determinant}}</me>
   </answer>
 </exercise>

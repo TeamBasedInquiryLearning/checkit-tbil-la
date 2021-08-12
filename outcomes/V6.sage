@@ -39,7 +39,7 @@ def generator():
       #"vecset": vectorSet(vec),
       "vecset": vectorSet(A.columns()),
       "dim": str(n),
-      "prompt": choice([true,false]),
+      "prompt": choice([True,False]),
       "matrix": A,
       "rref": A.rref(),
     }

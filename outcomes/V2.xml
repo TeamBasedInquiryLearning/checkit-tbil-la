@@ -14,7 +14,7 @@
     </ol>
   </statement>
   <answer>
-     <me>\operatorname{RREF} {{matrix}}={{rref}}</me>
+     <me>\mathrm{RREF}\,{{matrix}}={{rref}}</me>
      <ol>
         <li>
             The vector equation <m>{{veceq}}</m> has
