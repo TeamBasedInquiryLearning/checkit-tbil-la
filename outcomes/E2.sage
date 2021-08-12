@@ -11,26 +11,35 @@ def generator():
     A = simple_random_matrix_of_rank(number_of_pivots,rows=rows,columns=columns)
 
     #Create an almost-RREF matrix by doing one row op to an RREF
-
-    rowop = choice([{"elementary":True},{"diagonal":True},{"permutation":True}])
     s=ZZ(choice([randrange(2,8)])*int(choice([-1,1])))
-    if "elementary" in rowop:
-        r=randrange(0,number_of_pivots)
-        rr=choice(list(range(0,r))+list(range(r+1,number_of_pivots)))
-        E=elementary_matrix(rows, row1=r, row2=rr, scale=s)
-    elif "diagonal" in rowop:
-        E=elementary_matrix(rows, row1=randrange(0,number_of_pivots), scale=s)
-    else:
-        r=randrange(0,number_of_pivots)
-        rr=choice(list(range(0,r))+list(range(r+1,number_of_pivots)))
-        E=elementary_matrix(rows, row1=r, row2=rr)
+    # elementry
+    r=randrange(0,number_of_pivots)
+    rr=choice(list(range(0,r))+list(range(r+1,number_of_pivots)))
+    E=elementary_matrix(rows, row1=r, row2=rr, scale=s)
+    e_matrix=E*random_matrix(ZZ,rows,columns,algorithm='echelonizable',rank=number_of_pivots,upper_bound=13).rref()
+    # diagonal
+    E=elementary_matrix(rows, row1=randrange(0,number_of_pivots), scale=s)
+    d_matrix=E*random_matrix(ZZ,rows,columns,algorithm='echelonizable',rank=number_of_pivots,upper_bound=13).rref()
+    # permutation
+    r=randrange(0,number_of_pivots)
+    rr=choice(list(range(0,r))+list(range(r+1,number_of_pivots)))
+    E=elementary_matrix(rows, row1=r, row2=rr)
+    p_matrix=E*random_matrix(ZZ,rows,columns,algorithm='echelonizable',rank=number_of_pivots,upper_bound=13).rref()
 
-    B = E*random_matrix(ZZ,rows,columns,algorithm='echelonizable',rank=number_of_pivots,upper_bound=13).rref()
+    non_rrefs = [
+        {"elementary":True,"matrix":e_matrix,},
+        {"diagonal":True,"matrix":d_matrix,},
+        {"permutation":True,"matrix":p_matrix},
+    ]
+
+    shuffle(non_rrefs)
+
+    non_rrefs[0]["label"]="A"
+    non_rrefs[1]["label"]="B"
+    non_rrefs[2]["label"]="C"
 
     return {
       "A": A,
       "rref": A.rref(),
-      "B": B,
-      "rowop": rowop,
-      "Brref": (B==B.rref())
+      "non_rrefs": non_rrefs,
     }
