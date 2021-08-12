@@ -1,35 +1,44 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <exercise xmlns="https://spatext.clontz.org" version="0.0">
-  <statement>
-    <ol>
-        <li>Show that <me>\mathrm{RREF}\,{{A}}={{rref}}.</me></li>
-        <li>Explain why the matrix <m>B={{B}}</m> is or is not in reduced row echelon form.</li>
-    </ol>
-  </statement>
-  <answer>
-    <ol>
-        <li><me>\mathrm{RREF}\,{{A}}={{rref}}.</me></li>
-        <li>
-            <m>B</m> is
-            {{#Brref}}
-                in reduced row echelon form because each pivot is a <m>1</m>, the pivots are descending to the right, 
-                there are zeroes above and below each pivot, and all rows of zeroes are at the bottom.
-            {{/Brref}}
-            {{^Brref}}
-                not in reduced row echelon form because
-                {{#rowop}}
-                    {{#elementary}}
-                        not every entry above and below each pivot is zero.
-                    {{/elementary}}
-                    {{#permutation}}
-                        the pivots are not descending to the right.
-                    {{/permutation}}
-                    {{#diagonal}}
-                        the pivots are not all <m>1</m>.
-                    {{/diagonal}}
-                {{/rowop}}
-            {{/Brref}}
-        </li>
-    </ol>
-  </answer>
+    <statement>
+        <ol>
+            <li>
+                <p>
+For each of the following matrices, explain why it is not in reduced row
+echelon form.
+                    <me>
+                        {{#non_rrefs}}
+                            {{label}} = {{matrix}} \hspace{2em}
+                        {{/non_rrefs}}
+                        \hspace{2em}
+                    </me>
+                </p>
+            </li>
+            <li>
+                <p>
+Show step-by-step why <me>\operatorname{RREF}{{A}}={{rref}}</me>.
+                </p>
+            </li>
+        </ol>
+    </statement>
+    <answer>
+        <ul>
+            {{#non_rrefs}}
+                <li>
+                    <p>
+<m>{{label}}={{matrix}}</m> is not in reduced row echelon form because
+                        {{#elementary}}
+not every entry above and below each pivot is zero.
+                        {{/elementary}}
+                        {{#permutation}}
+the pivots are not descending to the right.
+                        {{/permutation}}
+                        {{#diagonal}}
+the pivots are not all <m>1</m>.
+                        {{/diagonal}}
+                    </p>
+                </li>
+            {{/non_rrefs}}
+        </ul>
+    </answer>
 </exercise>
