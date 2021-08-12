@@ -16,13 +16,17 @@ def generator():
     # Get RREF
     rref = copy(A.echelon_form())
 
-
-    return {
-        'system': latex_system_from_matrix(A),
+    export = {
         'matrix': A,
         'rref': rref,
         'solution': latex_solution_set_from_matrix(A),
         'prompt_system': prompt=='system',
         'prompt_vectoreq': prompt=='vectoreq',
-        'vectoreq': vectorEquation(A)
     }
+
+    if choice([True,False]):
+        export['system'] = latex_system_from_matrix(A)
+    else:
+        export['vectoreq'] = vectorEquation(A)
+    
+    return export
