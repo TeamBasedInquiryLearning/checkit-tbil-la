@@ -4,7 +4,7 @@
       <p>Explain how to find a basis for the eigenspace associated to the eigenvalue <m>{{eigenvalue}}</m> in the matrix <me>{{matrix}}</me></p>
   </statement>
   <answer>
-      <p><me>\operatorname{RREF}{{matrix_minus_lambda}}={{rref}}</me></p>
+      <p><me>\mathrm{RREF}\,{{matrix_minus_lambda}}={{rref}}</me></p>
       <p>A basis of the eigenspace is <m>{{basis}}</m>.</p>
   </answer>
 </exercise>

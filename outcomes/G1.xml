@@ -4,18 +4,18 @@
       <p>Let <m>A</m> be a <m>4 \times 4</m> matrix with determinant <m>{{determinant}}</m>.</p>
       <ol>
           <li>Let <m>{{name1}}</m> be the matrix obtained from <m>A</m> by applying the row operation <m>{{row_op1}}</m>.
-              What is <m>\operatorname{det}\ {{name1}}</m>?</li>
+              What is <m>\mathrm{det}\,{{name1}}</m>?</li>
           <li>Let <m>{{name2}}</m> be the matrix obtained from <m>A</m> by applying the row operation <m>{{row_op2}}</m>.
-              What is <m>\operatorname{det}\ {{name2}}</m>?</li>
+              What is <m>\mathrm{det}\,{{name2}}</m>?</li>
           <li>Let <m>{{name3}}</m> be the matrix obtained from <m>A</m> by applying the row operation <m>{{row_op3}}</m>.
-              What is <m>\operatorname{det}\ {{name3}}</m>?</li>
+              What is <m>\mathrm{det}\,{{name3}}</m>?</li>
       </ol>
   </statement>
   <answer>
        <ol>
-          <li><m>\operatorname{det}\ {{name1}}={{det1}}</m></li>
-          <li><m>\operatorname{det}\ {{name2}}={{det2}}</m></li>
-          <li><m>\operatorname{det}\ {{name3}}={{det3}}</m></li>
+          <li><m>\mathrm{det}\,{{name1}}={{det1}}</m></li>
+          <li><m>\mathrm{det}\,{{name2}}={{det2}}</m></li>
+          <li><m>\mathrm{det}\,{{name3}}={{det3}}</m></li>
       </ol>
   </answer>
 </exercise>

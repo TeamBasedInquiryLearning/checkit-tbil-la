@@ -17,7 +17,7 @@
     </ol>
   </statement>
   <answer>
-     <p><me>\operatorname{RREF}{{matrix}}={{rref}}</me></p>
+     <p><me>\mathrm{RREF}\,{{matrix}}={{rref}}</me></p>
      <ol>
          <li>
              The vector equation <m>{{vecComb}}=\vec{v}</m> 

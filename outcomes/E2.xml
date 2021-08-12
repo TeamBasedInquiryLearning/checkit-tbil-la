@@ -2,13 +2,13 @@
 <exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
     <ol>
-        <li>Show that <me>\operatorname{RREF}{{A}}={{rref}}.</me></li>
+        <li>Show that <me>\mathrm{RREF}\,{{A}}={{rref}}.</me></li>
         <li>Explain why the matrix <m>B={{B}}</m> is or is not in reduced row echelon form.</li>
     </ol>
   </statement>
   <answer>
     <ol>
-        <li><me>\operatorname{RREF}{{A}}={{rref}}.</me></li>
+        <li><me>\mathrm{RREF}\,{{A}}={{rref}}.</me></li>
         <li>
             <m>B</m> is
             {{#Brref}}

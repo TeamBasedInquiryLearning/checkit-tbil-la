@@ -9,7 +9,7 @@
     </ol>
   </statement>
   <answer>
-     <p><me>\operatorname{RREF}{{matrix}}={{rref}}</me></p>
+     <p><me>\mathrm{RREF}\,{{matrix}}={{rref}}</me></p>
      <ol>
           <li>The solution space is <m>{{solutions}}</m> </li>
           <li>A basis of the solution space is <m>{{basis}}</m>.</li>
