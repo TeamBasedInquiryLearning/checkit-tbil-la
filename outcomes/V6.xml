@@ -3,7 +3,7 @@
   <statement>
       <p>Consider the following statement.</p>
         <ul><li> The set of vectors <m>{{vecset}}</m> is
-            {{#prompt}}not {{/prompt}}
+            {{^prompt}}not {{/prompt}}
             a basis of <m>\mathbb{R}^{{dim}}</m>.
         </li></ul>
     <ol>
