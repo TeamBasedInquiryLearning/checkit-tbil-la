@@ -31,7 +31,7 @@
     </ol>
   </statement>
   <answer>
-     <p><me>\operatorname{RREF}\left[\begin{array}{cccc}
+     <p><me>\mathrm{RREF}\,\left[\begin{array}{cccc}
 1 &amp; 3 &amp; 10 &amp; -6 \\
 -1 &amp; -2 &amp; -7 &amp; 3 \\
 2 &amp; 3 &amp; 11 &amp; -3 \\

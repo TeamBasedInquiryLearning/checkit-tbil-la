@@ -8,7 +8,7 @@
 \end{array}\right]</m> is or is not invertible.</p>
   </statement>
   <answer>
-      <p><me>\operatorname{RREF}\left[\begin{array}{cccc}
+      <p><me>\mathrm{RREF}\,\left[\begin{array}{cccc}
 -4 &amp; -4 &amp; -1 &amp; -5 \\
 5 &amp; 5 &amp; 1 &amp; 7 \\
 -4 &amp; -4 &amp; 2 &amp; -14 \\

@@ -21,7 +21,7 @@ z \\
       </ol>
   </statement>
   <answer>
-      <p><me>\operatorname{RREF}\left[\begin{array}{cccc}
+      <p><me>\mathrm{RREF}\,\left[\begin{array}{cccc}
 3 &amp; -6 &amp; -4 &amp; 1 \\
 -2 &amp; 4 &amp; 3 &amp; -1 \\
 3 &amp; -6 &amp; -3 &amp; 0
@@ -33,12 +33,12 @@ z \\
       <ol>
           <li>
               <p>
-              <m>\operatorname{Im}\ T =  \left\{ \left[\begin{array}{c}
+              <m>\mathrm{Im}\,T =  \left\{ \left[\begin{array}{c}
 3 \, a - 4 \, b \\
 -2 \, a + 3 \, b \\
 3 \, a - 3 \, b
 \end{array}\right] \middle|\,a,b\in\mathbb{R}\right\}</m> and
-              <m>\operatorname{ker}\ T = \left\{ \left[\begin{array}{c}
+              <m>\mathrm{ker}\,T = \left\{ \left[\begin{array}{c}
 2 \, a + b \\
 a \\
 b \\
@@ -48,7 +48,7 @@ b
           </li>
           <li>
               <p>
-              A basis of <m>\operatorname{Im}\ T</m> is <m>\left\{ \left[\begin{array}{c}
+              A basis of <m>\mathrm{Im}\,T</m> is <m>\left\{ \left[\begin{array}{c}
 3 \\
 -2 \\
 3
@@ -57,7 +57,7 @@ b
 3 \\
 -3
 \end{array}\right] \right\}</m>.
-              A basis of <m>\operatorname{ker}\ T</m> is <m>\left\{ \left[\begin{array}{c}
+              A basis of <m>\mathrm{ker}\,T</m> is <m>\left\{ \left[\begin{array}{c}
 2 \\
 1 \\
 0 \\

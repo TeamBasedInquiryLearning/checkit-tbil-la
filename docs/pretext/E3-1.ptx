@@ -1,14 +1,46 @@
 <exercise checkit-seed="0001" checkit-slug="E3" checkit-title="Solving linear systems">
   <statement>
-    <p>Show how to find the solution set for the following 
-            system of linear equations.
-        <me>\begin{matrix}
- x_{1} &amp;  -  &amp; 2 \, x_{2} &amp;  -  &amp; x_{3} &amp; = &amp; 0 \\
- x_{1} &amp;  -  &amp; x_{2} &amp;  &amp;  &amp; = &amp; -1 \\
- x_{1} &amp;  -  &amp; 3 \, x_{2} &amp;  -  &amp; x_{3} &amp; = &amp; 0 \\
- &amp;  &amp;  &amp;  &amp;  0  &amp; = &amp; 1 \\
- \end{matrix}</me>
-     </p>
+    <p>
+Consider the following 
+vector equation. <me>x_{1} \left[\begin{array}{c}
+1 \\
+1 \\
+1 \\
+0
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-2 \\
+-1 \\
+-3 \\
+0
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-1 \\
+0 \\
+-1 \\
+0
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+-1 \\
+0 \\
+1
+\end{array}\right]</me>
+    </p>
+    <ol>
+      <li>
+        <p>
+Explain how to find a simpler
+          
+          vector equation
+that has the same solution set.
+        </p>
+      </li>
+      <li>
+        <p>
+Explain how to find the solution set of this simpler
+          
+          vector equation.
+        </p>
+      </li>
+    </ol>
   </statement>
 
   <answer>

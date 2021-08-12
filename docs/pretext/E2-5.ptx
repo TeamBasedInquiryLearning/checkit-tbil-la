@@ -1,7 +1,7 @@
 <exercise checkit-seed="0005" checkit-slug="E2" checkit-title="Reduced row echelon form">
   <statement>
     <ol>
-        <li>Show that <me>\operatorname{RREF}\left[\begin{array}{ccccc}
+        <li>Show that <me>\mathrm{RREF}\,\left[\begin{array}{ccccc}
 -2 &amp; 6 &amp; -6 &amp; -2 &amp; 4 \\
 3 &amp; -9 &amp; 9 &amp; 1 &amp; 0 \\
 -3 &amp; 9 &amp; -9 &amp; -2 &amp; 3
@@ -19,7 +19,7 @@
   </statement>
   <answer>
     <ol>
-        <li><me>\operatorname{RREF}\left[\begin{array}{ccccc}
+        <li><me>\mathrm{RREF}\,\left[\begin{array}{ccccc}
 -2 &amp; 6 &amp; -6 &amp; -2 &amp; 4 \\
 3 &amp; -9 &amp; 9 &amp; 1 &amp; 0 \\
 -3 &amp; 9 &amp; -9 &amp; -2 &amp; 3

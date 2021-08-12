@@ -22,7 +22,7 @@
 -2 \\
 -1
 \end{array}\right] \right\}</m> is
-            
+            not 
             a basis of <m>\mathbb{R}^4</m>.
         </li></ul>
     <ol>
@@ -31,7 +31,7 @@
     </ol>
   </statement>
   <answer>
-     <p><me>\operatorname{RREF}\left[\begin{array}{cccc}
+     <p><me>\mathrm{RREF}\,\left[\begin{array}{cccc}
 1 &amp; 0 &amp; -1 &amp; 2 \\
 -3 &amp; 1 &amp; 0 &amp; -4 \\
 -2 &amp; 2 &amp; -3 &amp; -2 \\

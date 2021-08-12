@@ -1,6 +1,6 @@
 <exercise checkit-seed="0006" checkit-slug="V7" checkit-title="Basis of a subspace">
   <statement>
-    <p>Consider the subspace <me>W=\operatorname{span} \left\{ \left[\begin{array}{c}
+    <p>Consider the subspace <me>W=\mathrm{span}\,\left\{ \left[\begin{array}{c}
 1 \\
 0 \\
 0 \\
@@ -33,7 +33,7 @@
     </ol>
   </statement>
   <answer>
-      <p><me>\operatorname{RREF}\left[\begin{array}{ccccc}
+      <p><me>\mathrm{RREF}\,\left[\begin{array}{ccccc}
 1 &amp; 0 &amp; -2 &amp; 3 &amp; 5 \\
 0 &amp; 1 &amp; -5 &amp; -4 &amp; -19 \\
 0 &amp; 1 &amp; -4 &amp; -3 &amp; -14 \\

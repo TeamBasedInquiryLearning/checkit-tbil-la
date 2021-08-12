@@ -8,7 +8,7 @@
 \end{array}\right]</me></p>
   </statement>
   <answer>
-      <p><me>\operatorname{RREF}\left[\begin{array}{cccc}
+      <p><me>\mathrm{RREF}\,\left[\begin{array}{cccc}
 -3 &amp; 6 &amp; -6 &amp; -3 \\
 0 &amp; 0 &amp; 0 &amp; 0 \\
 -4 &amp; 8 &amp; -8 &amp; -4 \\

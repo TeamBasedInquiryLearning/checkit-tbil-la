@@ -33,7 +33,7 @@
     </ol>
   </statement>
   <answer>
-     <me>\operatorname{RREF} \left[\begin{array}{ccc|c}
+     <me>\mathrm{RREF}\,\left[\begin{array}{ccc|c}
 -5 &amp; -3 &amp; 18 &amp; -14 \\
 -3 &amp; -2 &amp; 11 &amp; -9 \\
 -1 &amp; 3 &amp; 0 &amp; 8 \\

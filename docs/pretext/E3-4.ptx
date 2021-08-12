@@ -1,7 +1,8 @@
 <exercise checkit-seed="0004" checkit-slug="E3" checkit-title="Solving linear systems">
   <statement>
-    <p>Show how to find the solution set for the following 
-        vector equation <me>x_{1} \left[\begin{array}{c}
+    <p>
+Consider the following 
+vector equation. <me>x_{1} \left[\begin{array}{c}
 1 \\
 -2 \\
 -3 \\
@@ -22,7 +23,24 @@
 -4 \\
 -5
 \end{array}\right]</me>
-     </p>
+    </p>
+    <ol>
+      <li>
+        <p>
+Explain how to find a simpler
+          
+          vector equation
+that has the same solution set.
+        </p>
+      </li>
+      <li>
+        <p>
+Explain how to find the solution set of this simpler
+          
+          vector equation.
+        </p>
+      </li>
+    </ol>
   </statement>
 
   <answer>

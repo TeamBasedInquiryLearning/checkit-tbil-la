@@ -1,25 +1,25 @@
 vendor_guid,object_type,title,description,display_name,calculation_method,calculation_int,mastery_points,ratings
-checkit_tbil-la_00_E1_1628090720.6925051,outcome,"00-E1: Linear systems, vector equations, and augmented matrices",,E1,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_01_E2_1628090720.6925051,outcome,01-E2: Reduced row echelon form,,E2,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_02_E3_1628090720.6925051,outcome,02-E3: Solving linear systems,,E3,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_03_V1_1628090720.6925051,outcome,03-V1: Vector spaces,,V1,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_04_V2_1628090720.6925051,outcome,04-V2: Linear combinations,,V2,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_05_V3_1628090720.6925051,outcome,05-V3: Spanning sets,,V3,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_06_V4_1628090720.6925051,outcome,06-V4: Subspaces,,V4,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_07_V5_1628090720.6925051,outcome,07-V5: Linear independence,,V5,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_08_V6_1628090720.6925051,outcome,08-V6: Basis identification,,V6,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_09_V7_1628090720.6925051,outcome,09-V7: Basis of a subspace,,V7,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_10_V8_1628090720.6925051,outcome,10-V8: Polynomial and matrix spaces,,V8,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_11_V9_1628090720.6925051,outcome,11-V9: Homogeneous systems,,V9,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_12_A1_1628090720.6925051,outcome,12-A1: Linear maps,,A1,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_13_A2_1628090720.6925051,outcome,13-A2: Standard matrices,,A2,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_14_A3_1628090720.6925051,outcome,14-A3: Image and kernel,,A3,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_15_A4_1628090720.6925051,outcome,15-A4: Injectivity and surjectivity,,A4,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_16_M1_1628090720.6925051,outcome,16-M1: Multiplying matrices,,M1,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_17_M2_1628090720.6925051,outcome,17-M2: Row operations as matrix multiplication,,M2,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_18_M3_1628090720.6925051,outcome,18-M3: Invertible matrices,,M3,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_19_M4_1628090720.6925051,outcome,19-M4: Finding a matrix inverse,,M4,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_20_G1_1628090720.6925051,outcome,20-G1: Row operations and determinants,,G1,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_21_G2_1628090720.6925051,outcome,21-G2: Determinants,,G2,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_22_G3_1628090720.6925051,outcome,22-G3: Eigenvalues,,G3,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
-checkit_tbil-la_23_G4_1628090720.6925051,outcome,23-G4: Eigenvectors,,G4,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_00_E1_1628732792.284001,outcome,"00-E1: Linear systems, vector equations, and augmented matrices",,E1,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_01_E2_1628732792.284001,outcome,01-E2: Reduced row echelon form,,E2,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_02_E3_1628732792.284001,outcome,02-E3: Solving linear systems,,E3,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_03_V1_1628732792.284001,outcome,03-V1: Vector spaces,,V1,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_04_V2_1628732792.284001,outcome,04-V2: Linear combinations,,V2,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_05_V3_1628732792.284001,outcome,05-V3: Spanning sets,,V3,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_06_V4_1628732792.284001,outcome,06-V4: Subspaces,,V4,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_07_V5_1628732792.284001,outcome,07-V5: Linear independence,,V5,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_08_V6_1628732792.284001,outcome,08-V6: Basis identification,,V6,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_09_V7_1628732792.284001,outcome,09-V7: Basis of a subspace,,V7,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_10_V8_1628732792.284001,outcome,10-V8: Polynomial and matrix spaces,,V8,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_11_V9_1628732792.284001,outcome,11-V9: Homogeneous systems,,V9,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_12_A1_1628732792.284001,outcome,12-A1: Linear maps,,A1,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_13_A2_1628732792.284001,outcome,13-A2: Standard matrices,,A2,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_14_A3_1628732792.284001,outcome,14-A3: Image and kernel,,A3,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_15_A4_1628732792.284001,outcome,15-A4: Injectivity and surjectivity,,A4,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_16_M1_1628732792.284001,outcome,16-M1: Multiplying matrices,,M1,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_17_M2_1628732792.284001,outcome,17-M2: Row operations as matrix multiplication,,M2,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_18_M3_1628732792.284001,outcome,18-M3: Invertible matrices,,M3,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_19_M4_1628732792.284001,outcome,19-M4: Finding a matrix inverse,,M4,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_20_G1_1628732792.284001,outcome,20-G1: Row operations and determinants,,G1,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_21_G2_1628732792.284001,outcome,21-G2: Determinants,,G2,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_22_G3_1628732792.284001,outcome,22-G3: Eigenvalues,,G3,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess
+checkit_tbil-la_23_G4_1628732792.284001,outcome,23-G4: Eigenvectors,,G4,n_mastery,2,3,4,Exceeds Mastery,3,Meets Mastery,2,Near Mastery,1,Well Below Mastery,0,Insufficient Work to Assess

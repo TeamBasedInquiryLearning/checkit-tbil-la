@@ -8,7 +8,7 @@
 \end{array}\right].</me>.</p>
   </statement>
   <answer>
-      <me>\operatorname{det}\ \left[\begin{array}{cccc}
+      <me>\mathrm{det}\,\left[\begin{array}{cccc}
 1 &amp; -4 &amp; 0 &amp; 3 \\
 -4 &amp; 1 &amp; -2 &amp; 0 \\
 -1 &amp; 1 &amp; 0 &amp; -4 \\

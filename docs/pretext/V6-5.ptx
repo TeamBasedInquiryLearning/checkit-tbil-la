@@ -14,7 +14,7 @@
 9 \\
 -1
 \end{array}\right] \right\}</m> is
-            
+            not 
             a basis of <m>\mathbb{R}^3</m>.
         </li></ul>
     <ol>
@@ -23,7 +23,7 @@
     </ol>
   </statement>
   <answer>
-     <p><me>\operatorname{RREF}\left[\begin{array}{ccc}
+     <p><me>\mathrm{RREF}\,\left[\begin{array}{ccc}
 2 &amp; -1 &amp; -8 \\
 -1 &amp; 3 &amp; 9 \\
 1 &amp; 1 &amp; -1

@@ -30,7 +30,7 @@
     </ol>
   </statement>
   <answer>
-      <p><me>\operatorname{RREF}\left[\begin{array}{cccccc}
+      <p><me>\mathrm{RREF}\,\left[\begin{array}{cccccc}
 0 &amp; 2 &amp; 5 &amp; 3 &amp; 17 &amp; 15 \\
 0 &amp; 1 &amp; 5 &amp; 2 &amp; 16 &amp; 13 \\
 1 &amp; 0 &amp; 4 &amp; 5 &amp; 11 &amp; 10 \\

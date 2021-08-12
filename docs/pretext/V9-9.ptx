@@ -14,7 +14,7 @@
     </ol>
   </statement>
   <answer>
-     <p><me>\operatorname{RREF}\left[\begin{array}{ccc|c}
+     <p><me>\mathrm{RREF}\,\left[\begin{array}{ccc|c}
 1 &amp; 2 &amp; 5 &amp; 0 \\
 0 &amp; 1 &amp; 2 &amp; 0 \\
 0 &amp; 5 &amp; 10 &amp; 0 \\

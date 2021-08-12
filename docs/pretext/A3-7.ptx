@@ -21,7 +21,7 @@ x_{1} - x_{2} - x_{3} + 7 \, x_{4} \\
       </ol>
   </statement>
   <answer>
-      <p><me>\operatorname{RREF}\left[\begin{array}{cccc}
+      <p><me>\mathrm{RREF}\,\left[\begin{array}{cccc}
 0 &amp; -1 &amp; -3 &amp; 9 \\
 1 &amp; -1 &amp; -1 &amp; 7 \\
 -1 &amp; 1 &amp; 2 &amp; -9
@@ -33,12 +33,12 @@ x_{1} - x_{2} - x_{3} + 7 \, x_{4} \\
       <ol>
           <li>
               <p>
-              <m>\operatorname{Im}\ T =  \left\{ \left[\begin{array}{c}
+              <m>\mathrm{Im}\,T =  \left\{ \left[\begin{array}{c}
 -b - 3 \, c \\
 a - b - c \\
 -a + b + 2 \, c
 \end{array}\right] \middle|\,a,b,c\in\mathbb{R}\right\}</m> and
-              <m>\operatorname{ker}\ T = \left\{ \left[\begin{array}{c}
+              <m>\mathrm{ker}\,T = \left\{ \left[\begin{array}{c}
 -2 \, a \\
 3 \, a \\
 2 \, a \\
@@ -48,7 +48,7 @@ a
           </li>
           <li>
               <p>
-              A basis of <m>\operatorname{Im}\ T</m> is <m>\left\{ \left[\begin{array}{c}
+              A basis of <m>\mathrm{Im}\,T</m> is <m>\left\{ \left[\begin{array}{c}
 0 \\
 1 \\
 -1
@@ -61,7 +61,7 @@ a
 -1 \\
 2
 \end{array}\right] \right\}</m>.
-              A basis of <m>\operatorname{ker}\ T</m> is <m>\left\{ \left[\begin{array}{c}
+              A basis of <m>\mathrm{ker}\,T</m> is <m>\left\{ \left[\begin{array}{c}
 -2 \\
 3 \\
 2 \\

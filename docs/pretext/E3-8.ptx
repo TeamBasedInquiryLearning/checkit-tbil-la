@@ -1,14 +1,31 @@
 <exercise checkit-seed="0008" checkit-slug="E3" checkit-title="Solving linear systems">
   <statement>
-    <p>Show how to find the solution set for the following 
-            system of linear equations.
-        <me>\begin{matrix}
+    <p>
+Consider the following 
+system of linear equations.n<me>\begin{matrix}
  -4 \, x_{1} &amp;  -  &amp; 4 \, x_{2} &amp;  -  &amp; x_{3} &amp; = &amp; -5 \\
  5 \, x_{1} &amp;  +  &amp; 5 \, x_{2} &amp;  +  &amp; x_{3} &amp; = &amp; 7 \\
  -4 \, x_{1} &amp;  -  &amp; 4 \, x_{2} &amp;  +  &amp; 2 \, x_{3} &amp; = &amp; -14 \\
  2 \, x_{1} &amp;  +  &amp; 2 \, x_{2} &amp;  +  &amp; 4 \, x_{3} &amp; = &amp; -8 \\
  \end{matrix}</me>
-     </p>
+    </p>
+    <ol>
+      <li>
+        <p>
+Explain how to find a simpler
+          system
+          
+that has the same solution set.
+        </p>
+      </li>
+      <li>
+        <p>
+Explain how to find the solution set of this simpler
+          system.
+          
+        </p>
+      </li>
+    </ol>
   </statement>
 
   <answer>

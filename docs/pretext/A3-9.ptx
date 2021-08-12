@@ -21,7 +21,7 @@ x_{3} - 3 \, x_{4}
       </ol>
   </statement>
   <answer>
-      <p><me>\operatorname{RREF}\left[\begin{array}{cccc}
+      <p><me>\mathrm{RREF}\,\left[\begin{array}{cccc}
 1 &amp; 0 &amp; 5 &amp; -13 \\
 0 &amp; 1 &amp; 5 &amp; -18 \\
 0 &amp; 0 &amp; 1 &amp; -3
@@ -33,12 +33,12 @@ x_{3} - 3 \, x_{4}
       <ol>
           <li>
               <p>
-              <m>\operatorname{Im}\ T =  \left\{ \left[\begin{array}{c}
+              <m>\mathrm{Im}\,T =  \left\{ \left[\begin{array}{c}
 a + 5 \, c \\
 b + 5 \, c \\
 c
 \end{array}\right] \middle|\,a,b,c\in\mathbb{R}\right\}</m> and
-              <m>\operatorname{ker}\ T = \left\{ \left[\begin{array}{c}
+              <m>\mathrm{ker}\,T = \left\{ \left[\begin{array}{c}
 -2 \, a \\
 3 \, a \\
 3 \, a \\
@@ -48,7 +48,7 @@ a
           </li>
           <li>
               <p>
-              A basis of <m>\operatorname{Im}\ T</m> is <m>\left\{ \left[\begin{array}{c}
+              A basis of <m>\mathrm{Im}\,T</m> is <m>\left\{ \left[\begin{array}{c}
 1 \\
 0 \\
 0
@@ -61,7 +61,7 @@ a
 5 \\
 1
 \end{array}\right] \right\}</m>.
-              A basis of <m>\operatorname{ker}\ T</m> is <m>\left\{ \left[\begin{array}{c}
+              A basis of <m>\mathrm{ker}\,T</m> is <m>\left\{ \left[\begin{array}{c}
 -2 \\
 3 \\
 3 \\

@@ -3,18 +3,18 @@
       <p>Let <m>A</m> be a <m>4 \times 4</m> matrix with determinant <m>5</m>.</p>
       <ol>
           <li>Let <m>B</m> be the matrix obtained from <m>A</m> by applying the row operation <m>R_1 \to R_1 + 2R_3</m>.
-              What is <m>\operatorname{det}\ B</m>?</li>
+              What is <m>\mathrm{det}\,B</m>?</li>
           <li>Let <m>P</m> be the matrix obtained from <m>A</m> by applying the row operation <m>R_3 \leftrightarrow R_2</m>.
-              What is <m>\operatorname{det}\ P</m>?</li>
+              What is <m>\mathrm{det}\,P</m>?</li>
           <li>Let <m>M</m> be the matrix obtained from <m>A</m> by applying the row operation <m>R_4 \to -4R_4</m>.
-              What is <m>\operatorname{det}\ M</m>?</li>
+              What is <m>\mathrm{det}\,M</m>?</li>
       </ol>
   </statement>
   <answer>
        <ol>
-          <li><m>\operatorname{det}\ B=5</m></li>
-          <li><m>\operatorname{det}\ P=-5</m></li>
-          <li><m>\operatorname{det}\ M=-20</m></li>
+          <li><m>\mathrm{det}\,B=5</m></li>
+          <li><m>\mathrm{det}\,P=-5</m></li>
+          <li><m>\mathrm{det}\,M=-20</m></li>
       </ol>
   </answer>
 </exercise>

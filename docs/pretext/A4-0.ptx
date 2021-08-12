@@ -14,7 +14,7 @@
       </ol>
   </statement>
   <answer>
-      <p><me>\operatorname{RREF}\left[\begin{array}{ccc}
+      <p><me>\mathrm{RREF}\,\left[\begin{array}{ccc}
 -1 &amp; -1 &amp; -1 \\
 -2 &amp; -3 &amp; 3 \\
 2 &amp; 3 &amp; -2

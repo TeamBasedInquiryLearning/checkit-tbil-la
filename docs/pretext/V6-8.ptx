@@ -32,7 +32,7 @@
 4 \\
 -1
 \end{array}\right] \right\}</m> is
-            not 
+            
             a basis of <m>\mathbb{R}^5</m>.
         </li></ul>
     <ol>
@@ -41,7 +41,7 @@
     </ol>
   </statement>
   <answer>
-     <p><me>\operatorname{RREF}\left[\begin{array}{ccccc}
+     <p><me>\mathrm{RREF}\,\left[\begin{array}{ccccc}
 3 &amp; -1 &amp; -3 &amp; 2 &amp; 5 \\
 0 &amp; 1 &amp; -3 &amp; 2 &amp; 2 \\
 0 &amp; 2 &amp; -5 &amp; 3 &amp; 2 \\
