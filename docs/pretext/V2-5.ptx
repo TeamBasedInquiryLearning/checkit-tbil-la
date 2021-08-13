@@ -1,99 +1,134 @@
 <exercise checkit-seed="0005" checkit-slug="V2" checkit-title="Linear combinations">
-  <statement>
-      <p>Consider the following statement.</p>
-        <ul>
+    <statement>
+        <ol>
             <li>
-            The vector <m>\left[\begin{array}{c}
-4 \\
-0 \\
-3
-\end{array}\right]</m> is 
-                a linear combination of the vectors <m>\left[\begin{array}{c}
--2 \\
+                <p>
+Write a statement involving the solutions of a vector equation
+that's equivalent to each claim below.
+                </p>
+                <ul>
+                        <li>
+                            <p>
+<m>\left[\begin{array}{c}
+16 \\
+-13 \\
+16
+\end{array}\right]</m>is a linear combination of the vectors <m>\left[\begin{array}{c}
 3 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-6 \\
--9 \\
-9
+-2 \\
+3
 \end{array}\right] , \left[\begin{array}{c}
 -6 \\
-9 \\
--9
+4 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+3 \\
+-3
 \end{array}\right] , \text{ and } \left[\begin{array}{c}
--2 \\
 1 \\
--2
+-1 \\
+0
 \end{array}\right]</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+<m>\left[\begin{array}{c}
+17 \\
+-12 \\
+15
+\end{array}\right]</m>is a linear combination of the vectors <m>\left[\begin{array}{c}
+3 \\
+-2 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+4 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+3 \\
+-3
+\end{array}\right] , \text{ and } \left[\begin{array}{c}
+1 \\
+-1 \\
+0
+\end{array}\right]</m>.
+                            </p>
+                        </li>
+                </ul>
             </li>
-        </ul>
-    <ol>
-        <li> Write an equivalent statement using a vector equation.</li>
-        <li> Explain why your statement is true or false.</li>
-    </ol>
-  </statement>
-  <answer>
-     <me>\mathrm{RREF}\,\left[\begin{array}{cccc|c}
--2 &amp; 6 &amp; -6 &amp; -2 &amp; 4 \\
-3 &amp; -9 &amp; 9 &amp; 1 &amp; 0 \\
--3 &amp; 9 &amp; -9 &amp; -2 &amp; 3
-\end{array}\right]=\left[\begin{array}{cccc|c}
-1 &amp; -3 &amp; 3 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; -3 \\
+            <li>
+                <p>
+Use these statements to determine if each vector
+is or is not a linear combination.
+If it is, give an example of such a linear combination.
+                </p>
+            </li>
+        </ol>
+    </statement>
+    <answer>
+        <ul>
+                <li>
+                    <p>
+                        <m>
+\mathrm{RREF}\, \left[\begin{array}{cccc|c}
+3 &amp; -6 &amp; -4 &amp; 1 &amp; 16 \\
+-2 &amp; 4 &amp; 3 &amp; -1 &amp; -13 \\
+3 &amp; -6 &amp; -3 &amp; 0 &amp; 16
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; -2 &amp; 0 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right]
+                        </m>
+                    </p>
+                        <p>
+<m>\left[\begin{array}{c}
+16 \\
+-13 \\
+16
+\end{array}\right]</m> is not a linear combination.
+                        </p>
+                </li>
+                <li>
+                    <p>
+                        <m>
+\mathrm{RREF}\, \left[\begin{array}{cccc|c}
+3 &amp; -6 &amp; -4 &amp; 1 &amp; 17 \\
+-2 &amp; 4 &amp; 3 &amp; -1 &amp; -12 \\
+3 &amp; -6 &amp; -3 &amp; 0 &amp; 15
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; -2 &amp; 0 &amp; -1 &amp; 3 \\
+0 &amp; 0 &amp; 1 &amp; -1 &amp; -2 \\
 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right]</me>
-     <ol>
-        <li>
-            The vector equation <m>x_{1} \left[\begin{array}{c}
+\end{array}\right]
+                        </m>
+                    </p>
+                        <p>
+<m>\left[\begin{array}{c}
+17 \\
+-12 \\
+15
+\end{array}\right]</m> is a linear combination, for example:
+                            <m>
+3 \left[\begin{array}{c}
+3 \\
 -2 \\
+3
+\end{array}\right] + -2 \left[\begin{array}{c}
+-4 \\
 3 \\
 -3
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-6 \\
--9 \\
-9
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--6 \\
-9 \\
--9
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--2 \\
-1 \\
--2
 \end{array}\right] = \left[\begin{array}{c}
-4 \\
-0 \\
-3
-\end{array}\right]</m> has
-                a solution.
-        </li>
-        <li>
-            <p>
-                <m>\left[\begin{array}{c}
-4 \\
-0 \\
-3
-\end{array}\right]</m> is 
-                 a linear combination of the vectors <m>\left[\begin{array}{c}
--2 \\
-3 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-6 \\
--9 \\
-9
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-9 \\
--9
-\end{array}\right] , \text{ and } \left[\begin{array}{c}
--2 \\
-1 \\
--2
-\end{array}\right]</m>.
-            </p>
-        </li>
-    </ol>
-
-  </answer>
+17 \\
+-12 \\
+15
+\end{array}\right]
+                            </m>
+                        </p>
+                </li>
+        </ul>
+    </answer>
 </exercise>
