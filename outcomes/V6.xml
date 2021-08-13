@@ -1,31 +1,44 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <exercise xmlns="https://spatext.clontz.org" version="0.0">
-  <statement>
-      <p>Consider the following statement.</p>
-        <ul><li> The set of vectors <m>{{vecset}}</m> is
-            {{^prompt}}not {{/prompt}}
-            a basis of <m>\mathbb{R}^{{dim}}</m>.
-        </li></ul>
-    <ol>
-        <li> Write an equivalent statement in terms of other vector properties.</li>
-        <li> Explain why your statement is true or false.</li>
-    </ol>
-  </statement>
-  <answer>
-     <p><me>\mathrm{RREF}\,{{matrix}}={{rref}}</me></p>
-     <ol>
-         <li> The set of vectors <m>{{vecset}}</m> 
-                {{#prompt}}
-                    both spans <m>\mathbb{R}^{{dim}}</m> and is linearly independent.
-                {{/prompt}}
-                {{^prompt}}
-                    either doesn't span <m>\mathbb{R}^{{dim}}</m> or is linearly dependent.
-                {{/prompt}}
-         </li>
-         <li>
-                The set of vectors <m>{{vecset}}</m> is {{^basis}}not {{/basis}}
-                a basis of <m>\mathbb{R}^{{dim}}</m>
-         </li>
-      </ol>
-  </answer>
+    <statement>
+        <ol>
+            <li>
+                <p>
+Write a statement involving spanning and independence properties
+that's equivalent to each claim below.
+                </p>
+                <ul>
+                    <li>
+                        <p>
+The set of vectors <m>{{vecset}}</m> is a <em>basis</em>
+of <m>\mathbb{R}^{{dim}}</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+The set of vectors <m>{{vecset}}</m> is <em>not</em> a basis
+of <m>\mathbb{R}^{{dim}}</m>.
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>
+Explain how to determine which of these statements is true.
+                </p>
+            </li>
+        </ol>
+    </statement>
+    <answer>
+        <p>
+            <me>
+\mathrm{RREF}\, {{matrix}} = {{rref}}
+            </me>
+        </p>
+        <p>
+The set of vectors <m>{{vecset}}</m> is
+{{#basis}}a <em>basis</em>.{{/basis}}
+{{^basis}}<em>not</em> a basis.{{/basis}}
+        </p>
+    </answer>
 </exercise>

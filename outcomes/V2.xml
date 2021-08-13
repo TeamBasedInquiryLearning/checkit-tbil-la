@@ -4,8 +4,8 @@
         <ol>
             <li>
                 <p>
-Write a statement involving a vector equation that's equivalent to each
-claim below.
+Write a statement involving the solutions of a vector equation
+that's equivalent to each claim below.
                 </p>
                 <ul>
                     {{#vectors}}

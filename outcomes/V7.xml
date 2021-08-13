@@ -1,18 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
-    <p>Consider the subspace <me>W=\mathrm{span}\,{{vlist}}.</me>
+    <p>
+Consider the following subspace <m>W</m> of <m>\mathbb R^4</m>: 
+<me>W=\mathrm{span}\,{{vlist}}.</me>
     </p>
     <ol>
-        <li> Explain how to find a basis of <m>W</m>.</li>
-        <li> Explain how to find the dimension of <m>W</m>.</li>
+        <li><p>Explain how to find a basis of <m>W</m>.</p></li>
+        <li><p>Explain how to find the dimension of <m>W</m>.</p></li>
     </ol>
   </statement>
   <answer>
       <p><me>\mathrm{RREF}\,{{matrix}}={{rref}}</me></p>
      <ol>
-          <li>A basis of <m>W</m> is <m>{{basis}}</m>.</li>
-          <li>The dimension of <m>W</m> is <m>{{dimension}}</m>.</li>
+          <li><p>A basis of <m>W</m> is <m>{{basis}}</m>.</p></li>
+          <li><p>The dimension of <m>W</m> is <m>{{dimension}}</m>.</p></li>
       </ol>
   </answer>
 </exercise>

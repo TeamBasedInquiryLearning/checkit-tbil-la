@@ -20,14 +20,16 @@ def generator():
         coeffs[p]*A.column(p)
         for p in A.pivots()
     ]))
-    if coeffs[A.pivots()[1]]>0:
-        sign = "+"
-    else:
-        sign = ""
-    lin_combo_exp = latex(coeffs[A.pivots()[0]]) + \
-        latex(column_matrix(A.column(A.pivots()[0]))) + \
-        sign + latex(coeffs[A.pivots()[1]]) + \
-        latex(column_matrix(A.column(A.pivots()[1])))
+    lin_combo_exp = linearCombination(
+        [
+            coeffs[A.pivots()[i]]
+            for i in range(number_of_pivots)
+        ],
+        [
+            column_matrix(A.column(A.pivots()[i]))
+            for i in range(number_of_pivots)
+        ],
+    )
     matrix = A.augment(lin_combo, subdivide=True)
     vectors = [
         {

@@ -1,44 +1,47 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <exercise xmlns="https://spatext.clontz.org" version="0.0">
   <statement>
-      <p>Consider the following statement.</p>
-        <ul><li> The set of vectors <m>{{vecset}}</m> 
+        <ol>
+            <li>
+                <p>
+Write a statement involving a vector equation that's equivalent to each
+claim below.
+                </p>
+                <ul>
+                    <li>
+                        <p>
+The set of vectors <m>{{vecset}}</m> <em>spans</em> <m>\mathbb R^4</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+The set of vectors <m>{{vecset}}</m> does <em>not</em> span <m>\mathbb R^4</m>.
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>
+Explain how to determine which of these statements is true.
+                </p>
+            </li>
+        </ol>
+    </statement>
+    <answer>
+        <p>
+            <me>
+\mathrm{RREF}\, {{matrix}} = {{rref}}
+            </me>
+        </p>
+        <p>
+The set of vectors <m>{{vecset}}</m>
             {{#prompt}}
-                spans
+                <em>spans</em>
             {{/prompt}}
             {{^prompt}}
-                does not span
+                does <em>not</em> span
             {{/prompt}}
-            <m>\mathbb{R}^4</m>.
-        </li></ul>
-    <ol>
-        <li> Write an equivalent statement using a vector equation.</li>
-        <li> Explain why your statement is true or false.</li>
-    </ol>
-  </statement>
-  <answer>
-     <p><me>\mathrm{RREF}\,{{matrix}}={{rref}}</me></p>
-     <ol>
-         <li>
-             The vector equation <m>{{vecComb}}=\vec{v}</m> 
-             {{#prompt}}
-                 has a solution for every
-             {{/prompt}}
-             {{^prompt}}
-                 is inconsistent for some
-             {{/prompt}}
-             vector <m>\vec{v}</m> in <m>\mathbb{R}^4</m>.
-         </li>
-         <li>
-            The set of vectors <m>{{vecset}}</m>
-            {{#prompt}}
-                spans
-            {{/prompt}}
-            {{^prompt}}
-                does not span
-            {{/prompt}}
-            <m>\mathbb{R}^4</m>.
-         </li>
-       </ol>
-  </answer>
+<m>\mathbb{R}^4</m>.
+        </p>
+    </answer>
 </exercise>
