@@ -1,37 +1,55 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <exercise xmlns="https://spatext.clontz.org" version="0.0">
-  <statement>
-      <p>Consider the following statement.</p>
-        <ul>
+    <statement>
+        <ol>
             <li>
-            The vector <m>{{combovector}}</m> is {{^statement}}not {{/statement}}
-                a linear combination of the vectors <m>{{veclist}}</m>.
+                <p>
+Write a statement involving a vector equation that's equivalent to each
+claim below.
+                </p>
+                <ul>
+                    {{#vectors}}
+                        <li>
+                            <p>
+<m>{{v}}</m>is a linear combination of the vectors <m>{{veclist}}</m>.
+                            </p>
+                        </li>
+                    {{/vectors}}
+                </ul>
             </li>
+            <li>
+                <p>
+Use these statements to determine if each vector
+is or is not a linear combination.
+If it is, give an example of such a linear combination.
+                </p>
+            </li>
+        </ol>
+    </statement>
+    <answer>
+        <ul>
+            {{#vectors}}
+                <li>
+                    <p>
+                        <m>
+\mathrm{RREF}\, {{A}} = {{rref}}
+                        </m>
+                    </p>
+                    {{#lin_combo}}
+                        <p>
+<m>{{v}}</m> is a linear combination, for example:
+                            <m>
+{{lin_combo_exp}} = {{v}}
+                            </m>
+                        </p>
+                    {{/lin_combo}}
+                    {{^lin_combo}}
+                        <p>
+<m>{{v}}</m> is not a linear combination.
+                        </p>
+                    {{/lin_combo}}
+                </li>
+            {{/vectors}}
         </ul>
-    <ol>
-        <li> Write an equivalent statement using a vector equation.</li>
-        <li> Explain why your statement is true or false.</li>
-    </ol>
-  </statement>
-  <answer>
-     <me>\mathrm{RREF}\,{{matrix}}={{rref}}</me>
-     <ol>
-        <li>
-            The vector equation <m>{{veceq}}</m> has
-            {{#statement}}
-                a solution.
-            {{/statement}}
-            {{^statement}}
-                no solutions.
-            {{/statement}}
-        </li>
-        <li>
-            <p>
-                <m>{{combovector}}</m> is {{^is_linear_combo}}not {{/is_linear_combo}}
-                 a linear combination of the vectors <m>{{veclist}}</m>.
-            </p>
-        </li>
-    </ol>
-
-  </answer>
+    </answer>
 </exercise>
