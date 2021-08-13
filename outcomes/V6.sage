@@ -2,7 +2,8 @@ load("__common__.sage")
 
 def generator():
     #Pick n vectors in Rn
-    n=choice([3,4,5])
+    # n=choice([3,4,5])
+    n = 4
 #    vec=[]
 #    for i in range(0,n):
 #        v=[]
@@ -11,7 +12,7 @@ def generator():
 #        vec.append(vector(v))
 
     #Pick if yes a basis combination or not
-    basis = choice([false,true])
+    basis = choice([False,True])
     
     if basis:
         A=simple_random_matrix_of_rank(n,columns=n,rows=n)

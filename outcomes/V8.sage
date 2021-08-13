@@ -5,30 +5,22 @@ def generator():
     task=choice(["task_ind","task_spa"])
 
     if task=="task_ind":
-        n=4
- 
         #Pick if yes a linear combination or no
-        independent = choice([false,true])
-        
+        independent = choice([False,True])
+        n = choice([3,4])
         if independent:
             A=simple_random_matrix_of_rank(n,rows=4,columns=n)
         else:
-            A=simple_random_matrix_of_rank(choice([2,3]),rows=4,columns=n)
-
+            A=simple_random_matrix_of_rank(n-1,rows=4,columns=n)
         result=independent
 
     if task=="task_spa":
-        #Pick How many vectors in R4
-        n=choice([4,5,6])
-
         #Pick if yes a spanning set or no
-        span = choice([false,true])
-        
+        span = choice([False,True])
         if span:
-            A=simple_random_matrix_of_rank(4,rows=4,columns=n)
+            A=simple_random_matrix_of_rank(4,rows=4,columns=choice([4,5]))
         else:
-            A=simple_random_matrix_of_rank(choice([2,3]),rows=4,columns=n)
-
+            A=simple_random_matrix_of_rank(choice([2,3]),rows=4,columns=choice([4,5]))
         result=span
 
     #Create equation
