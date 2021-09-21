@@ -35,12 +35,12 @@ Explain how to determine which of these statements is true.
         </p>
         <p>
 The set of vectors <m>{{vecset}}</m>
-            {{#prompt}}
+            {{#spans}}
                 <em>spans</em>
-            {{/prompt}}
-            {{^prompt}}
+            {{/spans}}
+            {{^spans}}
                 does <em>not</em> span
-            {{/prompt}}
+            {{/spans}}
 <m>\mathbb{R}^4</m>.
         </p>
     </answer>
