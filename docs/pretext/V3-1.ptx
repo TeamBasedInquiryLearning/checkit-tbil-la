@@ -104,7 +104,7 @@ The set of vectors <m>\left\{ \left[\begin{array}{c}
 0 \\
 -3
 \end{array}\right] \right\}</m>
-                does <em>not</em> span
+                <em>spans</em>
 <m>\mathbb{R}^4</m>.
         </p>
     </answer>

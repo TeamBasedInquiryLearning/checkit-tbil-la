@@ -1,31 +1,39 @@
 <exercise checkit-seed="0007" checkit-slug="E2" checkit-title="Reduced row echelon form">
-  <statement>
-    <ol>
-        <li>Show that <me>\mathrm{RREF}\,\left[\begin{array}{ccc}
--1 &amp; 0 &amp; 1 \\
--1 &amp; -2 &amp; 1 \\
--1 &amp; 1 &amp; 1 \\
-1 &amp; 1 &amp; -1 \\
--2 &amp; -3 &amp; 2
-\end{array}\right]=\left[\begin{array}{ccc}
-1 &amp; 0 &amp; -1 \\
-0 &amp; 1 &amp; 0 \\
+    <statement>
+        <ol>
+            <li>
+                <p>
+For each of the following matrices, explain why it is not in reduced row
+echelon form.
+                    <me>
+                            A = \left[\begin{array}{ccc}
+0 &amp; 1 &amp; 1 \\
+1 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0
-\end{array}\right].</me></li>
-        <li>Explain why the matrix <m>B=\left[\begin{array}{ccc}
--3 &amp; 0 &amp; -3 \\
+\end{array}\right] \hspace{2em}
+                            B = \left[\begin{array}{ccc}
+1 &amp; 4 &amp; 5 \\
 0 &amp; 1 &amp; 1 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0
-\end{array}\right]</m> is or is not in reduced row echelon form.</li>
-    </ol>
-  </statement>
-  <answer>
-    <ol>
-        <li><me>\mathrm{RREF}\,\left[\begin{array}{ccc}
+\end{array}\right] \hspace{2em}
+                            C = \left[\begin{array}{ccc}
+4 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \hspace{2em}
+                        \hspace{2em}
+                    </me>
+                </p>
+            </li>
+            <li>
+                <p>
+Show step-by-step why <me>\operatorname{RREF}\left[\begin{array}{ccc}
 -1 &amp; 0 &amp; 1 \\
 -1 &amp; -2 &amp; 1 \\
 -1 &amp; 1 &amp; 1 \\
@@ -37,12 +45,49 @@
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0
-\end{array}\right].</me></li>
-        <li>
-            <m>B</m> is
-                not in reduced row echelon form because
-                        the pivots are not all <m>1</m>.
-        </li>
-    </ol>
-  </answer>
+\end{array}\right]</me>.
+                </p>
+            </li>
+        </ol>
+    </statement>
+    <answer>
+        <ul>
+                <li>
+                    <p>
+<m>A=\left[\begin{array}{ccc}
+0 &amp; 1 &amp; 1 \\
+1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right]</m> is not in reduced row echelon form because
+the pivots are not descending to the right.
+                    </p>
+                </li>
+                <li>
+                    <p>
+<m>B=\left[\begin{array}{ccc}
+1 &amp; 4 &amp; 5 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right]</m> is not in reduced row echelon form because
+not every entry above and below each pivot is zero.
+                    </p>
+                </li>
+                <li>
+                    <p>
+<m>C=\left[\begin{array}{ccc}
+4 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right]</m> is not in reduced row echelon form because
+the pivots are not all <m>1</m>.
+                    </p>
+                </li>
+        </ul>
+    </answer>
 </exercise>
